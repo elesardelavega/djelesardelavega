@@ -9,9 +9,9 @@ import { MusicPage } from './pages/Music'
 import { GalleryPage } from './pages/Gallery'
 import { ContactPage } from './pages/Contact'
 import { HomePage } from './pages/Home'
-import { PrivacyPolicyPage } from './pages/footer/PrivacyPolicy';
-import { TermsOfServicePage } from './pages/footer/TermsOfService';
-import { CookiePolicyPage } from './pages/footer/CookiePolicy';
+import { PrivacyPolicyPage } from './pages/footer/PrivacyPolicy'
+import { TermsOfServicePage } from './pages/footer/TermsOfService'
+import { CookiePolicyPage } from './pages/footer/CookiePolicy'
 
 function App() {
   return (

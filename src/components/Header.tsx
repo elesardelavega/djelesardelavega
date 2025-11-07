@@ -4,17 +4,11 @@ import React from 'react'
 
 import { Link, NavLink } from 'react-router-dom'
 import { Logos } from '../config/assets'
-import { useDrawer } from '../hooks/useDrawer'
-import { useScrollStatus } from '../hooks/useScrollStatus'
 import { Drawer } from './Drawer'
 import { getNavLinkClasses } from '../utils/styleUtils'
-
-const navLinks = [
-    { href: '/sobre-mi', label: 'Sobre Mí' },
-    { href: '/musica', label: 'Música' },
-    { href: '/galeria', label: 'Galería' },
-    { href: '/contacto', label: 'Contacto' },
-];
+import { useDrawer } from '../hooks/useDrawer'
+import { useScrollStatus } from '../hooks/useScrollStatus'
+import { useNavigation } from '../hooks/useNavigation'
 
 export const Header: React.FC = () => {
     const {
@@ -26,6 +20,7 @@ export const Header: React.FC = () => {
     } = useDrawer();
 
     const scrolled = useScrollStatus(50)
+    const { headerLinks } = useNavigation()
 
     const headerClasses = `sticky top-0 z-50 w-full border-b transition-shadow duration-300 ${scrolled
         ? 'bg-[hsl(var(--background)/95%)] shadow-xl'
@@ -49,7 +44,7 @@ export const Header: React.FC = () => {
 
                     {/* Navegación Desktop */}
                     <nav className="hidden md:flex items-center gap-6">
-                        {navLinks.map(link =>
+                        {headerLinks.map(link =>
                             <NavLink
                                 key={link.href}
                                 to={link.href}
@@ -74,7 +69,7 @@ export const Header: React.FC = () => {
                 drawerOpened={drawerOpened}
                 closeDrawer={closeDrawer}
                 drawerRef={drawerRef}
-                navLinks={navLinks}
+                navLinks={headerLinks}
             />
 
         </>
