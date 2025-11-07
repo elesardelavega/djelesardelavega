@@ -1,12 +1,9 @@
 // src/components/Footer.tsx
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { IconBrandInstagram, IconBrandFacebook, IconBrandSpotify, IconMail } from '@tabler/icons-react'
 import { Logos } from '../config/assets'
 import { getNavLinkClasses } from '../utils/styleUtils'
 import { useNavigation } from '../hooks/useNavigation'
-
-const iconMap = { IconBrandInstagram, IconBrandFacebook, IconBrandSpotify, IconMail }
 
 export const Footer: React.FC = () => {
     const currentYear = 2025
@@ -20,7 +17,7 @@ export const Footer: React.FC = () => {
             <div className="mx-auto max-w-[1440px] px-8 py-6 flex flex-col space-y-8 md:space-y-0">
 
                 {/* Logo (Izq) | Redes Sociales (Drcha) */}
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center opacity-0 animate-fade-in-up delay-[1000ms]">
 
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
@@ -34,7 +31,7 @@ export const Footer: React.FC = () => {
                     {/* Redes Sociales (Refactorizado) */}
                     <div className="flex space-x-6">
                         {socialLinks.map((item) => {
-                            const IconComponent = iconMap[item.icon as keyof typeof iconMap];
+                            const IconComponent = item.icon as React.FC<{ className: string }>
                             return (
                                 <a
                                     key={item.label}
@@ -52,7 +49,7 @@ export const Footer: React.FC = () => {
                 </div>
 
                 {/* Copyright (Izq) | Legales */}
-                <div className="flex flex-col md:flex-row justify-between items-center pt-4">
+                <div className="flex flex-col md:flex-row justify-between items-center pt-4 opacity-0 animate-fade-in-up delay-[1000ms]">
 
                     {/* Derechos de autor */}
                     <p className={`text-sm ${baseMutedText} font-sans mb-4 md:mb-0 order-2 md:order-1`}>

@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from 'react'
 
 /**
- * @returns {object} Estado del drawer, función para alternar estado, y refs para el drawer y el botón.
+ * @returns {object}
  */
 
 export const useDrawer = () => {

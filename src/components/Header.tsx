@@ -1,5 +1,4 @@
 // src/components/Header.tsx
-
 import React from 'react'
 
 import { Link, NavLink } from 'react-router-dom'
@@ -23,8 +22,8 @@ export const Header: React.FC = () => {
     const { headerLinks } = useNavigation()
 
     const headerClasses = `sticky top-0 z-50 w-full border-b transition-shadow duration-300 ${scrolled
-        ? 'bg-[hsl(var(--background)/95%)] shadow-xl'
-        : 'bg-[hsl(var(--background))]'
+        ? 'bg-[hsl(var(--background)/95%)] shadow-xl border-[hsl(var(--foreground))]'
+        : 'bg-[hsl(var(--background))] border-[hsl(var(--border))]'
         }`
 
     return (
@@ -34,7 +33,7 @@ export const Header: React.FC = () => {
                 <div
                     className="mx-auto max-w-[1440px] flex h-20 items-center justify-between px-8">
                     {/* Logo */}
-                    <Link to="/" className="flex items-center text-[hsl(var(--foreground))]">
+                    <Link to="/" className="flex items-center text-[hsl(var(--foreground))] opacity-0 animate-fade-in-up delay-[1000ms]">
                         <img
                             src={Logos.logoBlancoBorde}
                             alt="Logo Elesar De La Vega"
@@ -43,7 +42,7 @@ export const Header: React.FC = () => {
                     </Link>
 
                     {/* Navegación Desktop */}
-                    <nav className="hidden md:flex items-center gap-6">
+                    <nav className="hidden md:flex items-center gap-6 animate-slide-in-right delay-[1000ms]">
                         {headerLinks.map(link =>
                             <NavLink
                                 key={link.href}
@@ -57,7 +56,7 @@ export const Header: React.FC = () => {
                     {/* Botón hamburguesa */}
                     <button
                         ref={buttonRef}
-                        className="md:hidden text-[hsl(var(--foreground))] text-2xl relative z-50"
+                        className="md:hidden text-[hsl(var(--foreground))] text-2xl relative z-50 animate-slide-in-right delay-[1000ms]"
                         onClick={toggleDrawer}
                     >
                         {drawerOpened ? '✕' : '☰'}

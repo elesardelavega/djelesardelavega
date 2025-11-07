@@ -30,19 +30,19 @@ export const HeroSection: React.FC = () => {
                 </h1>
 
                 {/* Subtítulo */}
-                <p className="text-xl md:text-2xl mb-8 font-sans tracking-wide opacity-0 animate-fade-in-up delay-[200ms]">
+                <p className="text-xl md:text-2xl mb-8 font-sans tracking-wide opacity-0 animate-fade-in-up delay-[1000ms]">
                     Crafting Sonic Journeys for the Modern Age.
                 </p>
 
                 {/* Botón  */}
-                <div className="inline-block opacity-0 animate-fade-in-up delay-[400ms]">
+                <div className="inline-block opacity-0 animate-fade-in-up delay-[1000ms]">
                     <Button
                         component={Link}
                         to={heroButton.href}
                         className={`inline-flex items-center rounded-lg px-8 py-2 text-lg font-bold shadow-lg 
                                      ${primaryColor} ${primaryForeground} ${primaryBorder}
-                                     transition duration-300 transform hover:scale-[1.03] hover:shadow-2xl
-                                     animate-pulse-shadow`}
+                                     transition duration-300 transform ease-in-out
+                                     animate-pulse-shadow hover:shadow-2xl`}
                         variant="filled"
                         radius="md"
                         rightSection={<IconMusic className="h-5 w-5" />}

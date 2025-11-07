@@ -1,8 +1,16 @@
 // src/config/navConfig.ts
+
+import {
+  IconBrandInstagram,
+  IconBrandFacebook,
+  IconBrandSpotify,
+  IconMail,
+} from '@tabler/icons-react'
+
 interface NavItem {
-  href: string
-  label: string
-  external?: boolean
+  href: string;
+  label: string;
+  external?: boolean;
 }
 
 // (Header)
@@ -22,10 +30,10 @@ export const LEGAL_LINKS: NavItem[] = [
 
 // (Redes sociales)
 export const SOCIAL_LINKS = [
-  { icon: 'IconBrandInstagram', href: 'URL_INSTAGRAM', label: 'Instagram' },
-  { icon: 'IconBrandFacebook', href: 'URL_FACEBOOK', label: 'Facebook' },
-  { icon: 'IconBrandSpotify', href: 'URL_SPOTIFY', label: 'Spotify' },
-  { icon: 'IconMail', href: 'mailto:EMAIL_CONTACTO', label: 'Email' },
+  { icon: IconBrandInstagram, href: 'URL_INSTAGRAM', label: 'Instagram' },
+  { icon: IconBrandFacebook, href: 'URL_FACEBOOK', label: 'Facebook' },
+  { icon: IconBrandSpotify, href: 'URL_SPOTIFY', label: 'Spotify' },
+  { icon: IconMail, href: 'mailto:EMAIL_CONTACTO', label: 'Email' },
 ];
 
 // (acceso rápido)
