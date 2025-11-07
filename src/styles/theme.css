@@ -1,0 +1,64 @@
+:root {
+  --background: 225 7.1429% 10.9804%;
+  --foreground: 0 0% 96.0784%;
+  --card: 234 11.6279% 16.8627%;
+  --card-foreground: 0 0% 96.0784%;
+  --popover: 234 11.6279% 16.8627%;
+  --popover-foreground: 0 0% 96.0784%;
+  --primary: 216.8528 100% 61.3725%;
+  --primary-foreground: 0 0% 96.0784%;
+  --secondary: 41.9608 100% 70%;
+  --secondary-foreground: 225 7.1429% 10.9804%;
+  --muted: 234 11.6279% 16.8627%;
+  --muted-foreground: 0 0% 69.4118%;
+  --accent: 216.8528 100% 61.3725%;
+  --accent-foreground: 0 0% 96.0784%;
+  --destructive: 0 84.2365% 60.1961%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 234.5455 8.6614% 24.902%;
+  --input: 234 11.6279% 16.8627%;
+  --ring: 216.8528 100% 61.3725%;
+  --chart-1: 216.8528 100% 61.3725%;
+  --chart-2: 41.9608 100% 70%;
+  --chart-3: 216.8528 100% 61.3725%;
+  --chart-4: 41.9608 100% 70%;
+  --chart-5: 216.8528 100% 61.3725%;
+  --sidebar: 225 7.1429% 10.9804%;
+  --sidebar-foreground: 0 0% 96.0784%;
+  --sidebar-primary: 216.8528 100% 61.3725%;
+  --sidebar-primary-foreground: 0 0% 96.0784%;
+  --sidebar-accent: 216.8528 100% 61.3725%;
+  --sidebar-accent-foreground: 0 0% 96.0784%;
+  --sidebar-border: 234.5455 8.6614% 24.902%;
+  --sidebar-ring: 216.8528 100% 61.3725%;
+  --font-sans: 'Lato', sans-serif;
+  --font-serif: 'Merriweather', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  --radius: 0.75rem;
+  --shadow-x: 0px;
+  --shadow-y: 12px;
+  --shadow-blur: 30px;
+  --shadow-spread: -10px;
+  --shadow-opacity: 0.6;
+  --shadow-color: #3a86ff;
+  --shadow-2xs: 0px 12px 30px -10px hsl(216.8528 100% 61.3725% / 0.3);
+  --shadow-xs: 0px 12px 30px -10px hsl(216.8528 100% 61.3725% / 0.3);
+  --shadow-sm: 0px 12px 30px -10px hsl(216.8528 100% 61.3725% / 0.6),
+    0px 1px 2px -11px hsl(216.8528 100% 61.3725% / 0.6);
+  --shadow: 0px 12px 30px -10px hsl(216.8528 100% 61.3725% / 0.6),
+    0px 1px 2px -11px hsl(216.8528 100% 61.3725% / 0.6);
+  --shadow-md: 0px 12px 30px -10px hsl(216.8528 100% 61.3725% / 0.6),
+    0px 2px 4px -11px hsl(216.8528 100% 61.3725% / 0.6);
+  --shadow-lg: 0px 12px 30px -10px hsl(216.8528 100% 61.3725% / 0.6),
+    0px 4px 6px -11px hsl(216.8528 100% 61.3725% / 0.6);
+  --shadow-xl: 0px 12px 30px -10px hsl(216.8528 100% 61.3725% / 0.6),
+    0px 8px 10px -11px hsl(216.8528 100% 61.3725% / 0.6);
+  --shadow-2xl: 0px 12px 30px -10px hsl(216.8528 100% 61.3725% / 1.5);
+}
+
+body {
+  letter-spacing: var(--tracking-normal);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans, sans-serif);
+}

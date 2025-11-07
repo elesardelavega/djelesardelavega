@@ -1,0 +1,82 @@
+// src/components/Header.tsx
+
+import React from 'react'
+
+import { Link, NavLink } from 'react-router-dom'
+import { Logos } from '../config/assets'
+import { useDrawer } from '../hooks/useDrawer'
+import { useScrollStatus } from '../hooks/useScrollStatus'
+import { Drawer } from './Drawer'
+import { getNavLinkClasses } from '../utils/styleUtils'
+
+const navLinks = [
+    { href: '/sobre-mi', label: 'Sobre Mí' },
+    { href: '/musica', label: 'Música' },
+    { href: '/galeria', label: 'Galería' },
+    { href: '/contacto', label: 'Contacto' },
+];
+
+export const Header: React.FC = () => {
+    const {
+        drawerOpened,
+        toggleDrawer,
+        closeDrawer,
+        drawerRef,
+        buttonRef
+    } = useDrawer();
+
+    const scrolled = useScrollStatus(50)
+
+    const headerClasses = `sticky top-0 z-50 w-full border-b transition-shadow duration-300 ${scrolled
+        ? 'bg-[hsl(var(--background)/95%)] shadow-xl'
+        : 'bg-[hsl(var(--background))]'
+        }`
+
+    return (
+        <>
+            {/* Header */}
+            <header className={headerClasses}>
+                <div
+                    className="mx-auto max-w-[1440px] flex h-20 items-center justify-between px-8">
+                    {/* Logo */}
+                    <Link to="/" className="flex items-center text-[hsl(var(--foreground))]">
+                        <img
+                            src={Logos.logoBlancoBorde}
+                            alt="Logo Elesar De La Vega"
+                            className="h-12 w-auto object-contain"
+                        />
+                    </Link>
+
+                    {/* Navegación Desktop */}
+                    <nav className="hidden md:flex items-center gap-6">
+                        {navLinks.map(link =>
+                            <NavLink
+                                key={link.href}
+                                to={link.href}
+                                className={({ isActive }) => getNavLinkClasses({ isActive })}
+                            >
+                                {link.label}
+                            </NavLink>
+                        )}
+                    </nav>
+                    {/* Botón hamburguesa */}
+                    <button
+                        ref={buttonRef}
+                        className="md:hidden text-[hsl(var(--foreground))] text-2xl relative z-50"
+                        onClick={toggleDrawer}
+                    >
+                        {drawerOpened ? '✕' : '☰'}
+                    </button>
+                </div>
+            </header>
+
+            <Drawer
+                drawerOpened={drawerOpened}
+                closeDrawer={closeDrawer}
+                drawerRef={drawerRef}
+                navLinks={navLinks}
+            />
+
+        </>
+    );
+};
