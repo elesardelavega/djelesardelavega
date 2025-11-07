@@ -8,7 +8,7 @@ interface LegalPageProps {
 
 export const LegalPage: FC<LegalPageProps> = ({ title, children }) => {
     return (
-        <div className="p-8 mx-auto max-w-[1440px]">
+        <section className="min-h-[calc(100vh-4rem)]">
             {/* Título */}
             <h1 className="text-4xl font-serif font-bold mb-8 text-[hsl(var(--foreground))]">
                 {title}
@@ -18,6 +18,6 @@ export const LegalPage: FC<LegalPageProps> = ({ title, children }) => {
             <div className="text-[hsl(var(--muted-foreground))] space-y-4">
                 {children}
             </div>
-        </div>
+        </section>
     );
 };

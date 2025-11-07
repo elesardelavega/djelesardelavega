@@ -31,8 +31,8 @@
   --sidebar-accent-foreground: 0 0% 96.0784%;
   --sidebar-border: 234.5455 8.6614% 24.902%;
   --sidebar-ring: 216.8528 100% 61.3725%;
-  --font-sans: 'Lato', sans-serif;
-  --font-serif: 'Merriweather', sans-serif;
+  --font-sans: 'Merriweather', sans-serif;
+  --font-serif: 'Lato', sans-serif;
   --font-mono: 'Fira Code', monospace;
   --radius: 0.75rem;
   --shadow-x: 0px;

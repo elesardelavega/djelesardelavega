@@ -67,6 +67,41 @@ module.exports = {
         serif: ['var(--font-serif)'],
         mono: ['var(--font-mono)'],
       },
+      keyframes: {
+        'fade-in-up': {
+          from: {
+            opacity: '0',
+            transform: 'translateY(20px)',
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+        'pulse-shadow': {
+          '0%, 100%': {
+            boxShadow: '0 0 0 0px hsl(var(--primary) / 0.5)',
+            transform: 'scale(1)',
+          },
+          '50%': {
+            boxShadow: '0 0 0 8px hsl(var(--primary) / 0)',
+            transform: 'scale(1.01)',
+          },
+        },
+        'slide-in-right': {
+          from: {
+            transform: 'translateX(100%)',
+          },
+          to: {
+            transform: 'translateX(0)',
+          },
+        },
+      },
+      animation: {
+        'fade-in-up': 'fade-in-up 1s ease-out forwards',
+        'pulse-shadow': 'pulse-shadow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'slide-in-right': 'slide-in-right 0.8s ease-out forwards',
+      },
     },
   },
   plugins: [],

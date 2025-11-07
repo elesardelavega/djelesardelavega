@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './ThemeProvider'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
-import { LegalPage } from './pages/LegalPage'
 
 // páginas
 import { AboutPage } from './pages/About'
@@ -22,7 +21,7 @@ function App() {
         <div className="flex flex-col min-h-screen">
           <Header />
 
-          <div className="mx-auto max-w-[1440px] flex-grow w-full">
+          <div className="mx-auto flex-grow w-full">
             <main>
 
               <Routes>
@@ -41,8 +40,8 @@ function App() {
                 <Route path="/politica-cookies" element={<CookiePolicyPage />} />
 
                 {/* error 404 */}
-                <Route path="*" element={<div className="p-8"><h1>404 | Página no encontrada</h1></div>} />
-
+                <Route path="*" element={<section className="min-h-[calc(100vh-4rem)]"><h1>404 | Página no encontrada</h1></section>} />
+                
               </Routes>
             </main>
           </div>
