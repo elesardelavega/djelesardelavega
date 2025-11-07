@@ -2,7 +2,7 @@
 
 import React from 'react';
 // 💡 Cambiamos la importación de Link por NavLink
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { getNavLinkClasses } from '../utils/styleUtils'
 
 interface DrawerProps {
