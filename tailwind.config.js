@@ -102,6 +102,9 @@ module.exports = {
         'pulse-shadow': 'pulse-shadow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'slide-in-right': 'slide-in-right 0.8s ease-out forwards',
       },
+      screens: {
+        desk: '900px',
+      },
     },
   },
   plugins: [],

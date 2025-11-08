@@ -7,24 +7,21 @@ import { useNavigation } from '../hooks/useNavigation'
 
 export const Footer: React.FC = () => {
     const currentYear = 2025
-    // const baseMutedText = 'text-[hsl(var(--muted-foreground))]'
-    // const primaryHover = 'hover:text-[hsl(var(--primary))]'
-
     const { legalLinks, socialLinks } = useNavigation()
 
     return (
         <footer className="w-full bg-[hsl(var(--background))] border-t border-[hsl(var(--border))] mt-auto">
-            <div className="mx-auto max-w-[1440px] px-8 py-6 flex flex-col space-y-8 md:space-y-0">
+            <div className="mx-auto max-w-[1440px] px-8 py-6 flex flex-col space-y-8 md:space-y-0 items-center desk:items-stretch gap-6">
 
                 {/* Logo (Izq) | Redes Sociales (Drcha) */}
-                <div className="flex justify-between items-center opacity-0 animate-fade-in-up delay-[1000ms]">
+                <div className="flex flex-col sm:flex-row justify-between items-center opacity-0 animate-fade-in-up delay-[1000ms] gap-6 desk:gap-0">
 
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
                         <img
                             src={Logos.logoBlancoBorde}
                             alt="Elesar De La Vega Logo"
-                            className="h-10 w-auto object-contain"
+                            className="h-12 w-auto object-contain"
                         />
                     </Link>
 
@@ -49,15 +46,15 @@ export const Footer: React.FC = () => {
                 </div>
 
                 {/* Copyright (Izq) | Legales */}
-                <div className="flex flex-col md:flex-row justify-between items-center pt-4 opacity-0 animate-fade-in-up delay-[1000ms]">
+                <div className="flex flex-col desk:flex-row justify-between items-center pt-0 opacity-0 animate-fade-in-up delay-[1000ms] gap-6 desk:gap-0 !mt-0">
 
                     {/* Derechos de autor */}
                     <p className={`text-sm text-[hsl(var(--muted-foreground))] font-sans mb-4 md:mb-0 order-2 md:order-1`}>
                         &copy; {currentYear} Elesar De La Vega. Todos los derechos reservados.
                     </p>
 
-                    {/* Enlaces Legales - USANDO getNavLinkClasses */}
-                    <div className="flex flex-wrap space-x-4 text-sm order-1 md:order-2">
+                    {/* Navegación Legal */}
+                    <div className="flex flex-col items-center gap-y-2 sm:flex-row sm:gap-x-4 text-sm order-1 md:order-2">
                         {legalLinks.map((link) => (
                             <NavLink
                                 key={link.href}
@@ -68,6 +65,7 @@ export const Footer: React.FC = () => {
                             </NavLink>
                         ))}
                     </div>
+
                 </div>
             </div>
         </footer>

@@ -31,8 +31,7 @@ export const Drawer: React.FC<DrawerProps> = ({
             {/* Drawer lateral derecho */}
             <div
                 ref={drawerRef}
-                className={`fixed top-16 right-0 z-50 w-full sm:w-1/3 h-[calc(100%-4rem)] bg-[hsl(var(--background))] border-l shadow-md flex flex-col p-4 transform transition-transform duration-300
-                    ${drawerOpened ? 'translate-x-0' : 'translate-x-full'}`}
+                className={`fixed top-20 right-0 z-50 w-full sm:w-1/3 h-[calc(100%-4rem)] bg-[hsl(var(--background))] border-l border-[hsl(var(--border))] shadow-md flex flex-col p-4 transform transition-transform duration-300 ${drawerOpened ? 'translate-x-0' : 'translate-x-full'}`}
             >
                 {/* Contenido del drawer */}
                 {navLinks.map(link =>

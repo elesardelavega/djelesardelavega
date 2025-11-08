@@ -21,9 +21,9 @@ export const Header: React.FC = () => {
     const scrolled = useScrollStatus(50)
     const { headerLinks } = useNavigation()
 
-    const headerClasses = `sticky top-0 z-50 w-full border-b transition-shadow duration-300 ${scrolled
-        ? 'bg-[hsl(var(--background)/95%)] shadow-xl border-[hsl(var(--foreground))]'
-        : 'bg-[hsl(var(--background))] border-[hsl(var(--border))]'
+    const headerClasses = `sticky top-0 z-50 w-full border-b border-[hsl(var(--border))] transition-shadow duration-300 ${scrolled
+        ? 'bg-[hsl(var(--background)/95%)] shadow-xlx'
+        : 'bg-[hsl(var(--background))] '
         }`
 
     return (
