@@ -7,8 +7,8 @@ import { useNavigation } from '../hooks/useNavigation'
 
 export const Footer: React.FC = () => {
     const currentYear = 2025
-    const baseMutedText = 'text-[hsl(var(--muted-foreground))]'
-    const primaryHover = 'hover:text-[hsl(var(--primary))]'
+    // const baseMutedText = 'text-[hsl(var(--muted-foreground))]'
+    // const primaryHover = 'hover:text-[hsl(var(--primary))]'
 
     const { legalLinks, socialLinks } = useNavigation()
 
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
                                     href={item.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className={`${baseMutedText} ${primaryHover} transition duration-300`}
+                                    className={`text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition duration-300`}
                                     aria-label={`Enlace a ${item.label}`}
                                 >
                                     <IconComponent className="h-6 w-6" />
@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center pt-4 opacity-0 animate-fade-in-up delay-[1000ms]">
 
                     {/* Derechos de autor */}
-                    <p className={`text-sm ${baseMutedText} font-sans mb-4 md:mb-0 order-2 md:order-1`}>
+                    <p className={`text-sm text-[hsl(var(--muted-foreground))] font-sans mb-4 md:mb-0 order-2 md:order-1`}>
                         &copy; {currentYear} Elesar De La Vega. Todos los derechos reservados.
                     </p>
 
