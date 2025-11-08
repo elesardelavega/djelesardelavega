@@ -2,10 +2,10 @@
 
 import {
   IconBrandInstagram,
-  IconBrandFacebook,
-  IconBrandSpotify,
-  IconMail,
-} from '@tabler/icons-react'
+  IconBrandSoundcloud,
+  IconBrandYoutube,
+  IconBrandTiktok,
+} from '@tabler/icons-react';
 
 interface NavItem {
   href: string;
@@ -30,10 +30,14 @@ export const LEGAL_LINKS: NavItem[] = [
 
 // (Redes sociales)
 export const SOCIAL_LINKS = [
-  { icon: IconBrandInstagram, href: 'URL_INSTAGRAM', label: 'Instagram' },
-  { icon: IconBrandFacebook, href: 'URL_FACEBOOK', label: 'Facebook' },
-  { icon: IconBrandSpotify, href: 'URL_SPOTIFY', label: 'Spotify' },
-  { icon: IconMail, href: 'mailto:EMAIL_CONTACTO', label: 'Email' },
+  {
+    icon: IconBrandInstagram,
+    href: 'https://www.instagram.com/elesardelavega/',
+    label: 'Instagram',
+  },
+  { icon: IconBrandSoundcloud, href: 'https://soundcloud.com/elesardelavega', label: 'Soundcloud' },
+  { icon: IconBrandYoutube, href: 'https://www.youtube.com/@DJelesardelavega', label: 'Youtube' },
+  { icon: IconBrandTiktok, href: 'https://www.tiktok.com/@elesardelavega', label: 'Tiktok' },
 ];
 
 // (acceso rápido)

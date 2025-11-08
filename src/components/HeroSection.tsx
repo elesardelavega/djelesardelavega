@@ -25,13 +25,14 @@ export const HeroSection: React.FC = () => {
             <div className="relative z-10 text-center text-[hsl(var(--foreground))]">
 
                 {/* Logo/Título */}
-                <h1 className="text-6xl md:text-8xl font-serif font-extrabold mb-4 drop-shadow-lg opacity-0 animate-fade-in-up">
-                    Elesar De La Vega
+                <h1 className="text-6xl sm:text-7xl desk:text-8xl font-serif font-extrabold mb-4 drop-shadow-lg opacity-0 animate-fade-in-up">
+                    Elesar <br/> 
+                    De La Vega
                 </h1>
 
                 {/* Subtítulo */}
-                <p className="text-xl md:text-2xl mb-8 font-sans tracking-wide opacity-0 animate-fade-in-up delay-[1000ms]">
-                    Crafting Sonic Journeys for the Modern Age.
+                <p className="text-sm sm:text-xl mb-8 font-sans tracking-wide opacity-0 animate-fade-in-up delay-[1000ms]">
+                    A state of trance
                 </p>
 
                 {/* Botón  */}
