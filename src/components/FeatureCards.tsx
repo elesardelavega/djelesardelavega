@@ -43,7 +43,6 @@ export const FeatureCards: React.FC = () => {
         <FeatureCardItem
             key={index}
             data={feature}
-            delayMs={600 + index * 150}
         />
     ));
 
