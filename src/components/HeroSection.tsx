@@ -31,7 +31,7 @@ export const HeroSection: React.FC = () => {
                 </h1>
 
                 {/* Subtítulo */}
-                <p className="text-sm sm:text-xl mb-8 font-sans tracking-wide opacity-0 animate-fade-in-up delay-[1000ms]">
+                <p className="text-xl sm:text-2xl mb-8 font-sans tracking-wide opacity-0 animate-fade-in-up delay-[1000ms]">
                     A state of trance
                 </p>
 
