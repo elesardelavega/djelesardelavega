@@ -14,11 +14,10 @@ interface FeatureCardItemProps {
         href: string
         image: string
         imageAlt: string
-    };
-    delayMs: number
+    }
 }
 
-export const FeatureCardItem: FC<FeatureCardItemProps> = ({ data, delayMs }) => {
+export const FeatureCardItem: FC<FeatureCardItemProps> = ({ data }) => {
     return (
         <Card
             component={Link}
