@@ -10,7 +10,7 @@ import { useNavigation } from '../hooks/useNavigation'
 export const HeroSection: React.FC = () => {
     const { heroButton } = useNavigation()
     const primaryColor = 'bg-[hsl(var(--primary))]';
-    const primaryForeground = 'text-[hsl(var(--background))]';
+    const primaryForeground = '!text-[hsl(var(--background))]';
     const primaryBorder = 'border-[hsl(var(--primary))]';
 
     return (
