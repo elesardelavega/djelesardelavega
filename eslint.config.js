@@ -8,7 +8,8 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 export default defineConfig([
   globalIgnores(['dist']),
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ['**/*.{ts,js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    plugins: { js },
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,
@@ -33,4 +34,6 @@ export default defineConfig([
       'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
     },
   },
+  tseslint.configs.recommended,
+  pluginReact.configs.flat.recommended,
 ]);
