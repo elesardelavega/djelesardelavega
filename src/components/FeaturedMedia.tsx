@@ -1,15 +1,17 @@
-// src/components/FeaturedMedia.tsx
 import React from 'react';
 import { Title, Text, Badge } from '@mantine/core';
 import { useNavigation } from '../hooks/useNavigation';
+import { useLatestSoundcloud } from '../hooks/useLatestSoundcloud';
 
 export const FeaturedMedia: React.FC = () => {
     const { featuredMediaConfig } = useNavigation();
+    const track = useLatestSoundcloud();
 
-    const iframeCode = featuredMediaConfig.embedUrl.replace(
-        '<iframe',
-        '<iframe class="w-full h-[190px] border-none" loading="lazy"'
-    );
+    const iframeUrl = track
+        ? `https://w.soundcloud.com/player/?url=${encodeURIComponent(track.permalink_url)}&color=%233a86ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&theme_color=dark`
+        : featuredMediaConfig.embedUrl;
+
+    const iframeCode = `<iframe class="w-full h-[190px] border-none" loading="lazy" src="${iframeUrl}" frameborder="no" allow="autoplay"></iframe>`;
 
     return (
         <section className="w-full py-20 bg-[hsl(var(--background))]">
