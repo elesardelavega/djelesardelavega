@@ -8,7 +8,7 @@ import { IconMusic } from '@tabler/icons-react'
 import { useNavigation } from '../hooks/useNavigation'
 
 export const HeroSection: React.FC = () => {
-    const { heroButton } = useNavigation()
+    const { musicLink } = useNavigation()
     const primaryColor = 'bg-[hsl(var(--primary))]';
     const primaryForeground = '!text-[hsl(var(--background))]';
     const primaryBorder = 'border-[hsl(var(--primary))]';
@@ -26,7 +26,7 @@ export const HeroSection: React.FC = () => {
 
                 {/* Logo/Título */}
                 <h1 className="text-6xl sm:text-7xl desk:text-8xl font-serif font-extrabold mb-4 drop-shadow-lg opacity-0 animate-fade-in-up">
-                    Elesar <br/> 
+                    Elesar <br />
                     De La Vega
                 </h1>
 
@@ -39,7 +39,7 @@ export const HeroSection: React.FC = () => {
                 <div className="inline-block opacity-0 animate-fade-in-up delay-[1000ms]">
                     <Button
                         component={Link}
-                        to={heroButton.href}
+                        to={musicLink.href}
                         className={`inline-flex items-center rounded-lg px-8 py-2 text-lg font-bold shadow-lg 
                                      ${primaryColor} ${primaryForeground} ${primaryBorder}
                                      transition duration-300 transform ease-in-out
