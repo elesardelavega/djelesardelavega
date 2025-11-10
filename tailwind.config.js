@@ -105,6 +105,7 @@ module.exports = {
       },
       screens: {
         desk: '900px',
+        desktop: '1024px',
       },
     },
   },

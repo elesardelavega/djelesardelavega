@@ -10,10 +10,13 @@ import { IconPhone } from '@tabler/icons-react'
 const NombreArtista = "Elesar de la Vega"
 
 const BioSection: React.FC = () => {
+    // Clases definidas para consistencia
     const primaryColor = 'bg-[hsl(var(--primary))]';
     const primaryForeground = '!text-[hsl(var(--background))]';
     const primaryBorder = 'border-[hsl(var(--primary))]';
     const { contactLink } = useNavigation()
+
+    const responsiveTextSize = 'text-sm desk:text-sm desktop:text-lg';
 
     return (
         <section className="w-full py-20 bg-[hsl(var(--background))]">
@@ -36,7 +39,7 @@ const BioSection: React.FC = () => {
                         borderColor: 'hsl(var(--border))',
                     }}
                 >
-                    <div className="flex flex-col desk:flex-row items-start justify-between gap-12">
+                    <div className="flex flex-col desk:flex-row items-center justify-between gap-12">
 
                         {/* Biografía */}
                         <div className="desk:w-7/12 flex flex-col space-y-4 text-center desk:text-left">
@@ -47,15 +50,18 @@ const BioSection: React.FC = () => {
                                 Biografía
                             </Title>
 
-                            <Text size="lg" className="text-[hsl(var(--muted-foreground))] font-sans pt-2 pb-2">
+                            {/* Párrafo 1 con tamaño responsivo */}
+                            <Text size="lg" className={`text-[hsl(var(--muted-foreground))] font-sans pt-2 pb-2 ${responsiveTextSize}`}>
                                 {NombreArtista} es una figura consolidada de la escena musical española, reconocido por su capacidad de conectar con el público a través de sesiones de alta energía. Originario de Zaragoza, comenzó su trayectoria con un enfoque más comercial, evolucionando con el tiempo hacia un sonido versátil que combina techno, urbano y reggaetón, adaptándose a cada fiesta y escenario.
                             </Text>
 
-                            <Text size="lg" className="text-[hsl(var(--muted-foreground))] font-sans pb-2">
+                            {/* Párrafo 2 con tamaño responsivo */}
+                            <Text size="lg" className={`text-[hsl(var(--muted-foreground))] font-sans pb-2 ${responsiveTextSize}`}>
                                 A lo largo de su carrera, Elesar ha llevado su música a pueblos clave de Aragón como Aniñón, Uncastillo, San Mateo de Gállego, Villanueva de Gállego, Villamayor de Gállego, Zuera, Monzón, Castejón de Monegros, Alagón y Azuara, entre muchos otros, conquistando también discotecas de referencia como Parros, Mamanucca, La Casa del Loco, Oasis y Discoteca Darazú en Zaragoza.
                             </Text>
 
-                            <Text size="lg" className="text-[hsl(var(--muted-foreground))] font-sans pb-6">
+                            {/* Párrafo 3 con tamaño responsivo */}
+                            <Text size="lg" className={`text-[hsl(var(--muted-foreground))] font-sans pb-6 ${responsiveTextSize}`}>
                                 Su talento y versatilidad le han permitido convertirse en un DJ capaz de adaptarse a festivales, pubs y fiestas locales, siempre manteniendo intensidad y conexión con el público, consolidándose como un referente de la música en la región.
                             </Text>
 
