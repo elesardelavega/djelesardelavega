@@ -85,7 +85,8 @@ export const SetupGear: React.FC = () => {
                                         <IconHeadset style={{ width: rem(20), height: rem(20) }} className={primaryForeground} />
                                         <Text fw={700} fz="xl">Monitoreo:</Text>
                                         <Text fz="md" className={mutedForeground}>
-                                            Se recomienda disponer de monitores de cabina orientados al DJ para una óptima monitorización.                                         </Text>
+                                            Se recomienda disponer de monitores de cabina orientados al DJ para una óptima monitorización.
+                                        </Text>
                                     </Group>
                                 </li>
                             </ul>
