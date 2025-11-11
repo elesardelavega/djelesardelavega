@@ -46,7 +46,7 @@ export const SetupGear: React.FC = () => {
                         borderColor: 'hsl(var(--border))',
                     }}
                 >
-                    <div className="flex flex-col desk:flex-row items-center justify-between gap-12">
+                    <div className="flex flex-col desk:flex-row items-center justify-between gap-0">
 
                         {/* Descripcion */}
                         <div className="desk:w-7/12 flex flex-col space-y-4 text-center desk:text-left">
@@ -60,31 +60,31 @@ export const SetupGear: React.FC = () => {
                             </Text>
 
                             {/* Detalle */}
-                            <ul className="space-y-4 text-left list-none pl-0">
+                            <ul className="space-y-6 text-left list-none pl-0">
                                 <li className={`${primaryForeground}`}>
-                                    <Group gap="xs" align="start">
+                                    <Group gap="xs" align="center">
                                         <IconDisc style={{ width: rem(20), height: rem(20) }} className={primaryForeground} />
-                                        <Text fw={700} fz="md">Reproductores:</Text>
-                                        <Text className={mutedForeground}>
+                                        <Text fw={700} fz="xl">Reproductores:</Text>
+                                        <Text fz="md" className={mutedForeground}>
                                             Habitualmente usa Pioneer XDJ-RX2. <br></br>
                                             En caso de disponer de equipo en sala, son compatibles CDJ Pioneer (serie 2000 o superior).
                                         </Text>
                                     </Group>
                                 </li>
                                 <li className={`${primaryForeground}`}>
-                                    <Group gap="xs" align="start">
+                                    <Group gap="xs" align="center">
                                         <IconTools style={{ width: rem(20), height: rem(20) }} className={primaryForeground} />
-                                        <Text fw={700} fz="md">Mesa de Mezclas:</Text>
-                                        <Text className={mutedForeground}>
+                                        <Text fw={700} fz="xl">Mesa de Mezclas:</Text>
+                                        <Text fz="md" className={mutedForeground}>
                                             La mesa de mezclas será cualquiera en buen estado y correctamente configurada.
                                         </Text>
                                     </Group>
                                 </li>
                                 <li className={`${primaryForeground}`}>
-                                    <Group gap="xs" align="start">
+                                    <Group gap="xs" align="center">
                                         <IconHeadset style={{ width: rem(20), height: rem(20) }} className={primaryForeground} />
-                                        <Text fw={700} fz="md">Monitoreo:</Text>
-                                        <Text className={mutedForeground}>
+                                        <Text fw={700} fz="xl">Monitoreo:</Text>
+                                        <Text fz="md" className={mutedForeground}>
                                             Se recomienda disponer de monitores de cabina orientados al DJ para una óptima monitorización.                                         </Text>
                                     </Group>
                                 </li>
@@ -112,17 +112,17 @@ export const SetupGear: React.FC = () => {
                         </div>
 
                         {/* Imagen */}
-                        <div className="desk:w-5/12 flex justify-center pt-8 desk:pt-0">
+                        <div className="desk:w-5/12 flex justify-center pt-8 desk:pt-0 shadow-none">
                             <img
                                 src={setupPhoto}
                                 alt="Fotografía del equipo de DJing y setup técnico"
-                                className="transition-transform duration-700 ease-out group-hover:scale-95"
+                                className="transition-transform duration-700 ease-out group-hover:scale-95 sm:!max-w-none py-8"
                                 style={{
                                     width: '100%',
                                     maxWidth: rem(500),
                                     height: 'auto',
                                     borderRadius: rem(10),
-                                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)',
+                                    boxShadow: 'none',
                                 }}
                             />
                         </div>
