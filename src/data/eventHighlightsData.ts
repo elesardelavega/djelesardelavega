@@ -59,4 +59,4 @@ export const eventHighlightItems: EventHighlightItem[] = [
     title: 'Aniñon, Zaragoza',
     span: 'lg:col-span-1',
   },
-];
+]

@@ -199,7 +199,7 @@ export const chunkArray = (arr: PhotoItem[], size: number) => {
   for (let i = 0; i < arr.length; i += size) {
     chunkedArray.push(arr.slice(i, i + size))
   }
-  return chunkedArray;
-};
+  return chunkedArray
+}
 
 export const photosPerSlide = 7
