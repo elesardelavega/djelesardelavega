@@ -19,7 +19,7 @@ const EventCard: React.FC<EventCardProps> = ({ item, index }) => {
             className={`
                 group bg-[hsl(var(--card))] border-[hsl(var(--border))] 
                 shadow-none transition-all duration-500 cursor-pointer 
-                hover:shadow-xl hover:shadow-[hsl(var(--muted-foreground))] 
+                hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] 
                 opacity-0 animate-fade-in-up delay-[${600 + index * 100}ms] 
                 ${item.span ? item.span : ''} 
             `}
