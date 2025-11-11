@@ -27,6 +27,7 @@ export interface PhotoItem {
   location: string
   event: string
   span?: string
+  showOnMobile?: boolean
 }
 
 // DATOS
@@ -37,6 +38,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-2',
+    showOnMobile: false,
   },
   {
     src: azuara1Img as string,
@@ -44,6 +46,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
+    showOnMobile: false,
   },
   {
     src: monzalbarba1Img as string,
@@ -51,6 +54,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
+    showOnMobile: false,
   },
   {
     src: darazuImg as string,
@@ -58,6 +62,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Discoteca',
     span: 'col-span-1',
+    showOnMobile: false,
   },
   {
     src: bohalarImg as string,
@@ -65,6 +70,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
+    showOnMobile: true,
   },
   {
     src: lajungla1Img as string,
@@ -72,6 +78,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Discoteca',
     span: 'col-span-1',
+    showOnMobile: false,
   },
   {
     src: summerPartyImg as string,
@@ -79,6 +86,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Festival',
     span: 'col-span-1',
+    showOnMobile: true,
   },
   {
     src: monzalbarba3Img as string,
@@ -86,6 +94,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Discoteca',
     span: 'col-span-1',
+    showOnMobile: true,
   },
   {
     src: villamayorImg as string,
@@ -93,6 +102,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
+    showOnMobile: true,
   },
   {
     src: villanuevaImg as string,
@@ -100,6 +110,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
+    showOnMobile: true,
   },
   {
     src: villanueva2Img as string,
@@ -107,6 +118,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
+    showOnMobile: false,
   },
   {
     src: sanmateo4Img as string,
@@ -114,6 +126,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
+    showOnMobile: false,
   },
   {
     src: brutalbar2Img as string,
@@ -121,6 +134,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Discoteca',
     span: 'col-span-1',
+    showOnMobile: true,
   },
   {
     src: eventprivate1Img as string,
@@ -128,6 +142,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Discoteca',
     span: 'col-span-2',
+    showOnMobile: true,
   },
   {
     src: darazu1Img as string,
@@ -135,6 +150,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Discoteca',
     span: 'col-span-2',
+    showOnMobile: true,
   },
   {
     src: jaulaImg as string,
@@ -142,6 +158,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
+    showOnMobile: true,
   },
   {
     src: brutalImg as string,
@@ -149,6 +166,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Discoteca',
     span: 'col-span-1',
+    showOnMobile: true,
   },
   {
     src: eventprivate2Img as string,
@@ -156,6 +174,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Discoteca',
     span: 'col-span-1',
+    showOnMobile: true,
   },
   {
     src: jaula2Img as string,
@@ -163,6 +182,7 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
+    showOnMobile: true,
   },
   {
     src: sanmateo6Img as string,
@@ -170,9 +190,9 @@ export const photoItems: PhotoItem[] = [
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-2',
+    showOnMobile: true,
   },
-]
-
+];
 
 export const chunkArray = (arr: PhotoItem[], size: number) => {
   const chunkedArray = []
@@ -180,6 +200,6 @@ export const chunkArray = (arr: PhotoItem[], size: number) => {
     chunkedArray.push(arr.slice(i, i + size))
   }
   return chunkedArray;
-}
+};
 
 export const photosPerSlide = 7
