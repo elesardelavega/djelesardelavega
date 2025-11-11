@@ -1,5 +1,5 @@
 // src/pages/Contact.tsx
-import React from 'react';
+import React from 'react'
 
 export const ContactPage: React.FC = () => {
     return (
@@ -9,5 +9,5 @@ export const ContactPage: React.FC = () => {
                 Aquí irá el contanto.
             </p>
         </section>
-    );
-};
+    )
+}

@@ -74,7 +74,7 @@ const EventHighlights: React.FC = () => {
                             className={`
                                 group bg-[hsl(var(--card))] border-[hsl(var(--border))] 
                                 shadow-none transition-all duration-500 cursor-pointer 
-                                hover:shadow-xl hover:shadow-[hsl(var(--muted-foreground))] 
+                                hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] 
                                 opacity-0 animate-fade-in-up 
                                 ${item.span ? item.span : ''}
                             `}
@@ -105,7 +105,7 @@ const EventHighlights: React.FC = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default EventHighlights;

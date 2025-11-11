@@ -1,5 +1,5 @@
 // src/pages/Music.tsx
-import React from 'react';
+import React from 'react'
 
 export const MusicPage: React.FC = () => {
     return (
@@ -9,5 +9,5 @@ export const MusicPage: React.FC = () => {
                 Aquí irá la musica y sesiones.
             </p>
         </section>
-    );
-};
+    )
+}

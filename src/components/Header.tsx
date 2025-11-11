@@ -16,7 +16,7 @@ export const Header: React.FC = () => {
         closeDrawer,
         drawerRef,
         buttonRef
-    } = useDrawer();
+    } = useDrawer()
 
     const scrolled = useScrollStatus(50)
     const { headerLinks } = useNavigation()
@@ -72,5 +72,5 @@ export const Header: React.FC = () => {
             />
 
         </>
-    );
-};
+    )
+}

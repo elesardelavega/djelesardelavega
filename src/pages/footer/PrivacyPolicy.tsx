@@ -10,5 +10,5 @@ export const PrivacyPolicyPage: React.FC = () => {
             <p>Los datos recogidos son utilizados exclusivamente para la mejora del servicio y el envío de newsletters, si has dado tu consentimiento explícito.</p>
             {/* Aquí iría el texto completo de tu política */}
         </LegalPage>
-    );
-};
+    )
+}

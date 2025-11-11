@@ -1,5 +1,5 @@
 // src/pages/Gallery.tsx
-import React from 'react';
+import React from 'react'
 
 export const GalleryPage: React.FC = () => {
     return (
@@ -9,5 +9,5 @@ export const GalleryPage: React.FC = () => {
                 Aquí irá la galería.
             </p>
         </section>
-    );
-};
+    )
+}

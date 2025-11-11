@@ -1,9 +1,9 @@
 // src/pages/LegalPage.tsx
-import React, { type FC } from 'react';
+import React, { type FC } from 'react'
 
 interface LegalPageProps {
-    title: string;
-    children: React.ReactNode;
+    title: string
+    children: React.ReactNode
 }
 
 export const LegalPage: FC<LegalPageProps> = ({ title, children }) => {
@@ -19,5 +19,5 @@ export const LegalPage: FC<LegalPageProps> = ({ title, children }) => {
                 {children}
             </div>
         </section>
-    );
-};
+    )
+}

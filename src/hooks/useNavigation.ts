@@ -20,5 +20,5 @@ export const useNavigation = () => {
     contactLink: CONTACT_LINK,
     galleryLink: GALLERY_LINK,
     aboutLink: ABOUT_LINK,
-  };
-};
+  }
+}

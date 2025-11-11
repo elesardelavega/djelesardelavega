@@ -11,12 +11,12 @@ const NombreArtista = "Elesar de la Vega"
 
 const BioSection: React.FC = () => {
     // Clases definidas para consistencia
-    const primaryColor = 'bg-[hsl(var(--primary))]';
-    const primaryForeground = '!text-[hsl(var(--background))]';
-    const primaryBorder = 'border-[hsl(var(--primary))]';
+    const primaryColor = 'bg-[hsl(var(--primary))]'
+    const primaryForeground = '!text-[hsl(var(--background))]'
+    const primaryBorder = 'border-[hsl(var(--primary))]'
     const { contactLink } = useNavigation()
 
-    const responsiveTextSize = 'text-sm desk:text-sm desktop:text-lg';
+    const responsiveTextSize = 'text-sm desk:text-sm desktop:text-lg'
 
     return (
         <section className="w-full py-20 bg-[hsl(var(--background))]">
@@ -31,7 +31,7 @@ const BioSection: React.FC = () => {
                     className="
                         group w-full bg-[hsl(var(--card))] border-[hsl(var(--border))] 
                         shadow-none transition-all duration-500 cursor-pointer 
-                        hover:shadow-xl hover:shadow-[hsl(var(--muted-foreground))] 
+                        hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] 
                         opacity-0 animate-fade-in-up
                     "
                     style={{
@@ -105,7 +105,7 @@ const BioSection: React.FC = () => {
                 </Card>
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default BioSection;

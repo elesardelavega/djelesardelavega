@@ -9,5 +9,5 @@ export const CookiePolicyPage: React.FC = () => {
             <p>Las cookies son pequeños archivos de datos almacenados en tu dispositivo. Al continuar navegando, aceptas el uso de cookies.</p>
             {/* Aquí iría el texto completo de tu política de cookies */}
         </LegalPage>
-    );
-};
+    )
+}

@@ -9,5 +9,5 @@ export const TermsOfServicePage: React.FC = () => {
             <p>Al acceder a este sitio, aceptas estar sujeto a estos Términos y Condiciones de Uso, todas las leyes y regulaciones aplicables.</p>
             {/* Aquí iría el texto completo de tus términos */}
         </LegalPage>
-    );
-};
+    )
+}

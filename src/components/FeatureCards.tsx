@@ -35,7 +35,7 @@ const features = [
         image: photoGallery,
         imageAlt: 'Foto de evento',
     },
-];
+]
 
 export const FeatureCards: React.FC = () => {
 
@@ -44,7 +44,7 @@ export const FeatureCards: React.FC = () => {
             key={index}
             data={feature}
         />
-    ));
+    ))
 
     return (
         <section className="w-full bg-[hsl(var(--background))]">
@@ -58,5 +58,5 @@ export const FeatureCards: React.FC = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}

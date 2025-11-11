@@ -1,15 +1,15 @@
 // src/components/FeaturedMedia.tsx
-import React from 'react';
-import { Title, Text, Badge } from '@mantine/core';
-import { useNavigation } from '../hooks/useNavigation';
+import React from 'react'
+import { Title, Text, Badge } from '@mantine/core'
+import { useNavigation } from '../hooks/useNavigation'
 
 export const FeaturedMedia: React.FC = () => {
-    const { featuredMediaConfig } = useNavigation();
+    const { featuredMediaConfig } = useNavigation()
 
     const iframeCode = featuredMediaConfig.embedUrl.replace(
         '<iframe',
         '<iframe class="w-full h-[190px] border-none" loading="lazy"'
-    );
+    )
 
     return (
         <section className="w-full pb-20 bg-[hsl(var(--background))]">
@@ -50,5 +50,5 @@ export const FeaturedMedia: React.FC = () => {
                 />
             </div>
         </section>
-    );
-};
+    )
+}

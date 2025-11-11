@@ -3,15 +3,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@mantine/core'
 
-import heroImage from '../assets/hero-bg.webp';
+import heroImage from '../assets/hero-bg.webp'
 import { IconMusic } from '@tabler/icons-react'
 import { useNavigation } from '../hooks/useNavigation'
 
 export const HeroSection: React.FC = () => {
     const { musicLink } = useNavigation()
-    const primaryColor = 'bg-[hsl(var(--primary))]';
-    const primaryForeground = '!text-[hsl(var(--background))]';
-    const primaryBorder = 'border-[hsl(var(--primary))]';
+    const primaryColor = 'bg-[hsl(var(--primary))]'
+    const primaryForeground = '!text-[hsl(var(--background))]'
+    const primaryBorder = 'border-[hsl(var(--primary))]'
 
     return (
         <section
@@ -56,5 +56,5 @@ export const HeroSection: React.FC = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}

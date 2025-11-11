@@ -17,10 +17,10 @@ export const getNavLinkClasses = ({ isActive, isMobile = false }: NavLinkClassPr
   //  color: Muted-foreground por defecto, Primary  activo
   const colorClasses = isActive
     ? 'text-[hsl(var(--primary))]' 
-    : 'text-[hsl(var(--muted-foreground))]';
+    : 'text-[hsl(var(--muted-foreground))]'
 
   //  Hover: Foreground
- const hoverClasses = 'hover:text-[hsl(var(--primary))]';
+ const hoverClasses = 'hover:text-[hsl(var(--primary))]'
 
   return `${baseClasses} ${colorClasses} ${hoverClasses}`
-};
+}

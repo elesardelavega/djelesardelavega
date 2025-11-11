@@ -11,5 +11,5 @@ export const HomePage: React.FC = () => {
             <FeatureCards />
             <FeaturedMedia />
         </>
-    );
-};
+    )
+}

@@ -1,15 +1,15 @@
 // src/components/Drawer.tsx
 
-import React from 'react';
+import React from 'react'
 // 💡 Cambiamos la importación de Link por NavLink
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 import { getNavLinkClasses } from '../utils/styleUtils'
 
 interface DrawerProps {
-    drawerOpened: boolean;
-    closeDrawer: () => void;
-    drawerRef: React.RefObject<HTMLDivElement | null>;
-    navLinks: { href: string; label: string }[];
+    drawerOpened: boolean
+    closeDrawer: () => void
+    drawerRef: React.RefObject<HTMLDivElement | null>
+    navLinks: { href: string; label: string }[]
 }
 
 export const Drawer: React.FC<DrawerProps> = ({
@@ -46,5 +46,5 @@ export const Drawer: React.FC<DrawerProps> = ({
                 )}
             </div>
         </>
-    );
-};
+    )
+}
