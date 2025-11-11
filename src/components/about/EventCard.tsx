@@ -55,6 +55,8 @@ const EventCard: React.FC<EventCardProps> = ({ item, index }) => {
                             autoPlay
                             loop
                             preload="metadata"
+                            disablePictureInPicture
+                            controlsList="nodownload nofullscreen"
                             className="w-full h-full"
                             style={{
                                 objectFit: 'cover',
