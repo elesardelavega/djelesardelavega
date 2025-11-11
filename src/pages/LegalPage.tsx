@@ -1,4 +1,3 @@
-// src/pages/LegalPage.tsx
 import React, { type FC } from 'react'
 
 interface LegalPageProps {

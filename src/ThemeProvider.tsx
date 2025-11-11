@@ -10,5 +10,5 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
         <MantineProvider theme={{ fontFamily: 'var(--font-sans)', headings: { fontFamily: 'var(--font-serif)' }, }}>
             {children}
         </MantineProvider>
-    );
-};
+    )
+}

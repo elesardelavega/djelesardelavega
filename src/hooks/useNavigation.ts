@@ -1,4 +1,3 @@
-// src/hooks/useNavigation.ts
 import {
   HEADER_NAV_LINKS,
   LEGAL_LINKS,
@@ -8,7 +7,7 @@ import {
   CONTACT_LINK,
   GALLERY_LINK,
   ABOUT_LINK,
-} from '../config/navConfig';
+} from '../config/navConfig'
 
 export const useNavigation = () => {
   return {

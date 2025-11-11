@@ -1,12 +1,12 @@
 import React from 'react'
 import { Title, Text, Card, Group, Button } from '@mantine/core'
 import { rem } from '@mantine/core'
-import { IconHeadset, IconTools, IconChevronRight, IconDisc } from '@tabler/icons-react'
+import { IconHeadset, IconTools, IconDisc } from '@tabler/icons-react'
 import { Link } from 'react-router-dom'
 import { IconPhone } from '@tabler/icons-react'
-import { useNavigation } from '../hooks/useNavigation'
+import { useNavigation } from '../../hooks/useNavigation'
 
-import setupPhoto from '../assets/rider/rx2.png'
+import setupPhoto from '../../assets/rider/rx2.png'
 
 export const SetupGear: React.FC = () => {
     const primaryForeground = 'text-[hsl(var(--foreground))]'

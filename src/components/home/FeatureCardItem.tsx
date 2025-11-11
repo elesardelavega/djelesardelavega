@@ -1,4 +1,3 @@
-// src/components/FeatureCardItem.tsx
 import React, { type FC } from 'react'
 import { Link } from 'react-router-dom'
 import { Title, Text, Card, Group, CardSection, Image } from '@mantine/core'

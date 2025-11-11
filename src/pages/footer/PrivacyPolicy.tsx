@@ -1,4 +1,3 @@
-// src/pages/PrivacyPolicy.tsx
 import React from 'react'
 import { LegalPage } from '../LegalPage'
 

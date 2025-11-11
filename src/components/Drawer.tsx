@@ -1,4 +1,3 @@
-// src/components/Drawer.tsx
 
 import React from 'react'
 // 💡 Cambiamos la importación de Link por NavLink

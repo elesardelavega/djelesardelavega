@@ -1,8 +1,7 @@
-// src/pages/Home.tsx
 import React from 'react'
-import { HeroSection } from '../components/HeroSection'
-import { FeatureCards } from '../components/FeatureCards'
-import { FeaturedMedia } from '../components/FeaturedMedia'
+import { HeroSection } from '../components/home/HeroSection'
+import { FeatureCards } from '../components/home/FeatureCards'
+import { FeaturedMedia } from '../components/home/FeaturedMedia'
 
 export const HomePage: React.FC = () => {
     return (

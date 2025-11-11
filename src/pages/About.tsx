@@ -1,8 +1,7 @@
-// src/pages/About.tsx
 import React from 'react'
-import BioSection from '../components/BioSection.tsx'
-import EventHighlights from '../components/EventHighlights.tsx'
-import SetupGear from '../components/SetupGear.tsx'
+import BioSection from '../components/about/BioSection.tsx'
+import EventHighlights from '../components/about/EventHighlights.tsx'
+import SetupGear from '../components/about/SetupGear.tsx'
 
 export const AboutPage: React.FC = () => {
     return (

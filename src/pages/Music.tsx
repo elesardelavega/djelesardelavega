@@ -1,4 +1,3 @@
-// src/pages/Music.tsx
 import React from 'react'
 
 export const MusicPage: React.FC = () => {

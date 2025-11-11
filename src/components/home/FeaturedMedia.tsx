@@ -1,7 +1,6 @@
-// src/components/FeaturedMedia.tsx
 import React from 'react'
 import { Title, Text, Badge } from '@mantine/core'
-import { useNavigation } from '../hooks/useNavigation'
+import { useNavigation } from '../../hooks/useNavigation'
 
 export const FeaturedMedia: React.FC = () => {
     const { featuredMediaConfig } = useNavigation()

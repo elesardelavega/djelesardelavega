@@ -1,16 +1,15 @@
-// src/config/navConfig.ts
 
 import {
   IconBrandInstagram,
   IconBrandSoundcloud,
   IconBrandYoutube,
   IconBrandTiktok,
-} from '@tabler/icons-react';
+} from '@tabler/icons-react'
 
 interface NavItem {
-  href: string;
-  label: string;
-  external?: boolean;
+  href: string
+  label: string
+  external?: boolean
 }
 
 // (Header)

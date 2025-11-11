@@ -1,8 +1,6 @@
-// src/utils/styleUtils.ts
-
 interface NavLinkClassProps {
-  isActive: boolean;
-  isMobile?: boolean; 
+  isActive: boolean
+  isMobile?: boolean;
 }
 
 /**

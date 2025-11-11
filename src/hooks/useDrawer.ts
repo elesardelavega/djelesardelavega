@@ -1,4 +1,3 @@
-// src/hooks/useDrawer.ts
 import { useState, useRef, useEffect } from 'react'
 
 /**

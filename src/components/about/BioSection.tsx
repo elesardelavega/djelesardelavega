@@ -2,8 +2,8 @@ import React from 'react'
 import { Title, Text, Button, Card } from '@mantine/core'
 import { Link } from 'react-router-dom'
 import { rem } from '@mantine/core'
-import foto from '../assets/me/jaula2.jpg'
-import { useNavigation } from '../hooks/useNavigation'
+import foto from '../../assets/me/jaula2.jpg'
+import { useNavigation } from '../../hooks/useNavigation'
 import { IconPhone } from '@tabler/icons-react'
 
 // Datos 
@@ -108,4 +108,4 @@ const BioSection: React.FC = () => {
     )
 }
 
-export default BioSection;
+export default BioSection

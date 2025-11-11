@@ -52,7 +52,7 @@ function App() {
 
       </Router>
     </ThemeProvider>
-  );
+  )
 }
 
 export default App

@@ -1,4 +1,3 @@
-// src/components/Footer.tsx
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Logos } from '../config/assets'
@@ -40,7 +39,7 @@ export const Footer: React.FC = () => {
                                 >
                                     <IconComponent className="h-6 w-6" />
                                 </a>
-                            );
+                            )
                         })}
                     </div>
                 </div>

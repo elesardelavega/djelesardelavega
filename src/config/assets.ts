@@ -1,4 +1,3 @@
-// src/config/assets.ts
 import logoBlancoBlanco from '../assets/logoBlancoBlanco.webp'
 import logoNegro from '../assets/logoNegro.webp'
 import logoBlancoBorde from '../assets/logoBlancoBorde.webp'

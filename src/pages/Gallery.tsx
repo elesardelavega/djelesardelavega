@@ -1,4 +1,3 @@
-// src/pages/Gallery.tsx
 import React from 'react'
 
 export const GalleryPage: React.FC = () => {
