@@ -5,7 +5,7 @@ import aniñon from '../assets/events/aniñon.jpg'
 import brutalAsset from '../assets/me/brutal.jpg'
 import azuaraAsset from '../assets/events/azuara.jpg'
 import monzalbarbaVideo from '../assets/events/monzalbarba.mp4'
-import sanMateoVideo from '../assets/events/sanMateo.mp4'
+import sanMateoVideo from '../assets/events/sanMateo.mp4';
 
 // Tipos
 export interface EventHighlightItem {
