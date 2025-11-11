@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './ThemeProvider'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
+import ScrollToTop from './hooks/useScrollToTop'
 
 // páginas
 import { AboutPage } from './pages/About'
@@ -17,7 +18,7 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-
+        <ScrollToTop />
         <div className="flex flex-col min-h-screen">
           <Header />
 

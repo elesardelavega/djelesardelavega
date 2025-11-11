@@ -4,7 +4,7 @@ import { IconMusic, IconUser, IconPhoto } from '@tabler/icons-react'
 import { FeatureCardItem } from './FeatureCardItem'
 
 import photoMe from '../assets/me/foto.png'
-import photoGallery from '../assets/gallery/aniñon.jpg'
+import photoGallery from '../assets/events/aniñon.jpg'
 import photoJaula from '../assets/me/jaula.jpg'
 
 const features = [

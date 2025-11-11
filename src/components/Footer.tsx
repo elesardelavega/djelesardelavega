@@ -49,7 +49,7 @@ export const Footer: React.FC = () => {
                 <div className="flex flex-col desk:flex-row justify-between items-center pt-0 opacity-0 animate-fade-in-up delay-[1000ms] gap-6 desk:gap-0 !mt-0">
 
                     {/* Derechos de autor */}
-                    <p className={`text-sm text-[hsl(var(--muted-foreground))] font-sans mb-4 md:mb-0 order-2 md:order-1`}>
+                    <p className={`text-sm text-center text-[hsl(var(--muted-foreground))] font-sans mb-4 md:mb-0 order-2 md:order-1`}>
                         &copy; {currentYear} Elesar De La Vega. Todos los derechos reservados.
                     </p>
 

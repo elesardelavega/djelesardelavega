@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title, Text, Card } from '@mantine/core'
+import { Title, Card } from '@mantine/core'
 import { rem } from '@mantine/core'
 
 import sanma1 from '../assets/events/sanma.jpg'
@@ -23,7 +23,7 @@ const eventHighlightItems: EventHighlightImage[] = [
         src: sanma1,
         type: 'image',
         title: 'San Mateo de gallego, Zaragoza',
-        span: 'lg:col-span-2 lg:row-span-1',
+        span: 'md:col-span-2 lg:col-span-2 lg:row-span-1',
     },
     {
         src: brutalAsset,
@@ -35,13 +35,13 @@ const eventHighlightItems: EventHighlightImage[] = [
         src: monzalbarbaVideo,
         type: 'video',
         title: 'Monzalbarba, Zaragoza',
-        span: 'lg:col-span-1 lg:row-span-1',
+        span: 'lg:col-span-1',
     },
     {
         src: azuaraAsset,
         type: 'image',
         title: 'Azuara',
-        span: 'lg:col-span-1 row-span-1',
+        span: 'lg:col-span-1',
     },
     {
         src: sanMateoVideo,
@@ -75,13 +75,7 @@ const EventHighlights: React.FC = () => {
                             padding="lg"
                             radius="lg"
                             withBorder
-                            className={`
-                                group bg-[hsl(var(--card))] border-[hsl(var(--border))] 
-                                shadow-none transition-all duration-500 cursor-pointer 
-                                hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] 
-                                opacity-0 animate-fade-in-up 
-                                ${item.span ? item.span : ''}
-                            `}
+                            className={` group bg-[hsl(var(--card))] border-[hsl(var(--border))]  shadow-none transition-all duration-500 cursor-pointer  hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))]  opacity-0 animate-fade-in-up  ${item.span ? item.span : ''} `}
                             style={{
                                 borderColor: 'hsl(var(--border))',
                             }}
@@ -90,18 +84,17 @@ const EventHighlights: React.FC = () => {
                             {(item.type === 'image' || item.type === 'video') && (
                                 <div style={{
                                     width: '100%',
-                                    height: '400px',
                                     overflow: 'hidden',
                                     borderRadius: rem(8),
                                     marginBottom: rem(16),
+                                    position: 'relative',
                                 }}>
                                     {item.type === 'image' ? (
                                         <img
                                             src={item.src}
                                             alt={item.title}
+                                            className="w-full h-auto sm:h-[400px]"
                                             style={{
-                                                width: '100%',
-                                                height: '100%',
                                                 objectFit: 'cover',
                                             }}
                                         />
@@ -110,12 +103,11 @@ const EventHighlights: React.FC = () => {
                                             src={item.src}
                                             controls
                                             muted
-                                            loop
                                             autoPlay
+                                            loop
                                             preload="metadata"
+                                            className="w-full h-auto sm:h-[400px]"
                                             style={{
-                                                width: '100%',
-                                                height: 'auto',
                                                 objectFit: 'cover',
                                             }}
                                         >
@@ -125,6 +117,7 @@ const EventHighlights: React.FC = () => {
                                 </div>
                             )}
 
+                            {/* Título */}
                             <Title order={4} className="text-[hsl(var(--foreground))] !mb-0" mb="xs">
                                 {item.title}
                             </Title>
@@ -136,4 +129,4 @@ const EventHighlights: React.FC = () => {
     )
 }
 
-export default EventHighlights;
+export default EventHighlights

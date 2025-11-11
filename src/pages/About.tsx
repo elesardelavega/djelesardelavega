@@ -2,6 +2,7 @@
 import React from 'react'
 import BioSection from '../components/BioSection.tsx'
 import EventHighlights from '../components/EventHighlights.tsx'
+import SetupGear from '../components/SetupGear.tsx'
 
 export const AboutPage: React.FC = () => {
     return (
@@ -11,6 +12,9 @@ export const AboutPage: React.FC = () => {
 
             {/* Actuaciones*/}
             <EventHighlights />
+
+            {/* Equipamiento*/}
+            <SetupGear />
         </>
 
     )
