@@ -44,7 +44,7 @@ export const eventHighlightItems: EventHighlightItem[] = [
   {
     src: sanMateoVideo as string,
     type: 'video',
-    title: 'San Mateo de gallego, Zaragoza (Video)',
+    title: 'San Mateo de gallego, Zaragoza',
     span: 'lg:col-span-1',
   },
   {

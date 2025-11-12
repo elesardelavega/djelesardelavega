@@ -77,18 +77,28 @@ export const MediaDownloadCard = () => {
                         <Carousel
                             height={200}
                             slideGap="md"
-                            controlsOffset="xs"
                             slideSize="100%"
+                            controlsOffset="xs"
+                            withControls
                             classNames={{
-                                root: '!px-32',
-                                controls: 'absolute left-8 right-8 top-0 bottom-0',
+                                root: '!px-4 sm:!px-12 md:!px-32',
+                                controls: 'absolute left-6 right-6 top-0 bottom-0',
                                 control: 'bg-transparent text-white hover:shadow-none !border-none !rounded-none',
                             }}
                         >
+
                             {logos.map((src, i) => (
-                                <Carousel.Slide key={i}>
-                                    <img src={src} alt={`Logo ${i + 1}`} className="w-full h-full object-contain rounded-md" />
+                                <Carousel.Slide
+                                    key={i}
+                                    className="flex items-center justify-center"
+                                >
+                                    <img
+                                        src={src}
+                                        alt={`Logo ${i + 1}`}
+                                        className="w-[160px] sm:w-[200px] md:w-[240px] h-auto object-contain"
+                                    />
                                 </Carousel.Slide>
+
                             ))}
                         </Carousel>
 

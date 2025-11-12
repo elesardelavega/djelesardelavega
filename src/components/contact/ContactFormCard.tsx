@@ -5,8 +5,8 @@ import { IconSend, IconPhone } from "@tabler/icons-react"
 import { useSubmitForm } from "../../hooks/useSubmitForm"
 
 const cardBaseClasses = `
-  max-h-[400px]
-  h-full
+  h-auto
+  lg:max-h-[400px]
   bg-[hsl(var(--card))] border-[hsl(var(--border))]
   shadow-none transition-all duration-500
   hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))]
@@ -52,12 +52,13 @@ export const ContactFormCard = () => {
             {!submitted ? (
                 <form onSubmit={handleSubmit}>
                     <Stack className="space-y-4">
-                        <Group grow>
+                        <div className="flex flex-col sm:flex-row gap-4 w-full">
                             <TextInput
                                 name="nombre"
                                 label="Nombre"
                                 placeholder="Nombre comercial o del evento"
                                 required
+                                className="w-full"
                             />
                             <TextInput
                                 name="telefono"
@@ -65,10 +66,11 @@ export const ContactFormCard = () => {
                                 placeholder="Teléfono"
                                 type="tel"
                                 required
+                                className="w-full"
                             />
-                        </Group>
+                        </div>
 
-                        <Group grow>
+                        <div className="flex flex-col sm:flex-row gap-4 w-full">
                             <Select
                                 name="evento"
                                 label="Tipo de Evento"
@@ -81,6 +83,7 @@ export const ContactFormCard = () => {
                                     { value: "pueblo", label: "Pueblo" },
                                 ]}
                                 required
+                                className="w-full"
                             />
                             <TextInput
                                 name="presupuesto"
@@ -88,32 +91,37 @@ export const ContactFormCard = () => {
                                 placeholder="Ej. 1500 €"
                                 type="number"
                                 required
+                                className="w-full"
                             />
-                        </Group>
+                        </div>
 
                         <Textarea
                             name="mensaje"
                             label="Mensaje"
                             placeholder="Cuéntame más sobre tu evento..."
                             minRows={4}
+                            className="w-full"
                         />
 
-                        <div className="flex justify-between items-center mt-4">
-                            <Text size="sm" color="dimmed" className="text-[hsl(var(--foreground))]">
+                        <div className="mt-4 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
+                            {/* Texto a la izquierda */}
+                            <Text
+                                size="sm"
+                                color="dimmed"
+                                className="text-[hsl(var(--foreground))] sm:text-left text-center"
+                            >
                                 Respondemos lo antes posible. Solo bookings profesionales
                             </Text>
 
-                            <div className="flex gap-2">
+                            {/* Botones a la derecha */}
+                            <div className="flex flex-row justify-center sm:justify-end gap-2 w-full">
                                 <Button
                                     type="button"
                                     onClick={() => handleWhatsApp(document.querySelector("form")!)}
                                     variant="filled"
                                     radius="md"
                                     rightSection={<IconPhone className="h-4 w-4" />}
-                                    className={`inline-flex items-center rounded-lg px-8 py-2 text-MD font-bold shadow-lg 
-                                     ${primaryColor} ${primaryForeground} ${primaryBorder}
-                                     transition duration-300 transform ease-in-out
-                                     animate-pulse-shadow hover:shadow-2xl`}
+                                    className={`inline-flex items-center rounded-lg px-6 py-2 text-sm font-semibold shadow-md ${primaryColor} ${primaryForeground} ${primaryBorder} transition duration-300 ease-in-out hover:shadow-lg`}
                                 >
                                     WhatsApp
                                 </Button>
@@ -123,33 +131,33 @@ export const ContactFormCard = () => {
                                     variant="filled"
                                     radius="md"
                                     rightSection={<IconSend className="h-4 w-4" />}
-                                    className={`inline-flex items-center rounded-lg px-8 py-2 text-MD font-bold shadow-lg 
-                                     ${primaryColor} ${primaryForeground} ${primaryBorder}
-                                     transition duration-300 transform ease-in-out
-                                     animate-pulse-shadow hover:shadow-2xl`}
+                                    className={`inline-flex items-center rounded-lg px-6 py-2 text-sm font-semibold shadow-md ${primaryColor} ${primaryForeground} ${primaryBorder} transition duration-300 ease-in-out hover:shadow-lg`}
                                 >
                                     Correo
                                 </Button>
                             </div>
-                        </div>
-                </Stack>
-                </form>
-    ) : (
-        <Transition mounted={submitted} transition="fade" duration={500} timingFunction="ease">
-            {(styles) => (
-                <div
-                    style={styles}
-                    className="flex items-center justify-center h-full w-full text-center"
-                >
-                    <Text size="lg" color="teal">
-                        ✅ ¡Solicitud enviada! Gracias por tu interés, te responderemos lo antes posible.
-                    </Text>
-                </div>
-            )}
-        </Transition>
 
-    )
-}
+                        </div>
+
+
+                    </Stack>
+                </form>
+            ) : (
+                <Transition mounted={submitted} transition="fade" duration={500} timingFunction="ease">
+                    {(styles) => (
+                        <div
+                            style={styles}
+                            className="flex items-center justify-center h-full w-full text-center"
+                        >
+                            <Text size="lg" color="teal">
+                                ✅ ¡Solicitud enviada! Gracias por tu interés, te responderemos lo antes posible.
+                            </Text>
+                        </div>
+                    )}
+                </Transition>
+
+            )
+            }
         </Card >
     )
 }

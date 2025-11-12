@@ -1,7 +1,7 @@
 import { IconMusic, IconUser, IconPhoto } from '@tabler/icons-react'
 
-import photoMe from '../assets/me/foto.png'
-import photoGallery from '../assets/events/aniñon.jpg'
+import photoMe from '../assets/fotos/1n.png'
+import photoGallery from '../assets/gallery/monzalbarba12.jpg';
 import photoJaula from '../assets/me/jaula.jpg'
 
 export const features = [

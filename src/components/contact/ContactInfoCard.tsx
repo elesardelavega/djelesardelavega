@@ -16,7 +16,11 @@ export const ContactInfoCard = () => {
     const { email, phone, address } = useContactInfo()
 
     return (
-        <Card shadow="md" radius="md" withBorder className={cardBaseClasses} p="xl">
+        <Card shadow="md"
+            radius="md"
+            withBorder
+            className={`${cardBaseClasses} min-w-[280px] lg:min-w-[320px]`}
+            p="xl">
             <Title order={3} className="text-white mb-10">
                 Información
             </Title>
