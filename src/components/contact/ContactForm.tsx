@@ -1,0 +1,15 @@
+import { ContactInfoCard } from "./ContactInfoCard"
+import { ContactFormCard } from "./ContactFormCard"
+
+const ContactForm: React.FC = () => {
+    return (
+        <section className="w-full py-20 bg-[hsl(var(--background))]" id="contacto">
+            <div className="mx-auto max-w-[1440px] px-8 grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 items-start">
+                <ContactInfoCard />
+                <ContactFormCard />
+            </div>
+        </section>
+    )
+}
+
+export default ContactForm
