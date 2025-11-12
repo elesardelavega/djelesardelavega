@@ -21,28 +21,28 @@ export const ContactInfoCard = () => {
                 Información
             </Title>
 
-            <Stack className="space-y-4 text-white text-base">
+            <Stack className="space-y-4 text-white">
                 <Group align="flex-start">
-                    <IconMail size={24} />
+                    <IconMail size={24} className="text-[hsl(var(--muted-foreground))]" />
                     <div>
-                        <Text className="text-sm font-semibold">Email</Text>
-                        <Text className="text-base">{email}</Text>
+                        <Text className="text-sm font-semibold text-[hsl(var(--muted-foreground))]">Email</Text>
+                        <Text className="text-md text-base">{email}</Text>
                     </div>
                 </Group>
 
                 <Group align="flex-start">
-                    <IconPhone size={24} />
+                    <IconPhone size={24} className="text-[hsl(var(--muted-foreground))]" />
                     <div>
-                        <Text className="text-sm font-semibold">Teléfono</Text>
-                        <Text className="text-base">{phone}</Text>
+                        <Text className="text-sm font-semibold text-[hsl(var(--muted-foreground))]">Teléfono</Text>
+                        <Text className="text-md text-base">{phone}</Text>
                     </div>
                 </Group>
 
                 <Group align="flex-start">
-                    <IconMapPin size={24} />
+                    <IconMapPin size={24} className="text-[hsl(var(--muted-foreground))]" />
                     <div>
-                        <Text className="text-sm font-semibold">Dirección</Text>
-                        <Text className="text-base">{address}</Text>
+                        <Text className="text-sm font-semibold text-[hsl(var(--muted-foreground))]">Dirección</Text>
+                        <Text className="text-md text-base">{address}</Text>
                     </div>
                 </Group>
             </Stack>

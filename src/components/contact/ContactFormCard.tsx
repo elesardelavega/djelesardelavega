@@ -99,42 +99,45 @@ export const ContactFormCard = () => {
                                 Respondemos lo antes posible. Solo bookings profesionales
                             </Text>
 
-                            <Button
-                                type="button"
-                                onClick={() => handleWhatsApp(document.querySelector("form")!)}
-                                variant="filled"
-                                radius="md"
-                                rightSection={<IconPhone className="h-4 w-4" />}
-                            >
-                                WhatsApp
-                            </Button>
+                            <div className="flex gap-2">
+                                <Button
+                                    type="button"
+                                    onClick={() => handleWhatsApp(document.querySelector("form")!)}
+                                    variant="filled"
+                                    radius="md"
+                                    rightSection={<IconPhone className="h-4 w-4" />}
+                                >
+                                    WhatsApp
+                                </Button>
 
-                            <Button
-                                type="submit"
-                                variant="filled"
-                                radius="md"
-                                rightSection={<IconSend className="h-4 w-4" />}
-                            >
-                                Correo
-                            </Button>
+                                <Button
+                                    type="submit"
+                                    variant="filled"
+                                    radius="md"
+                                    rightSection={<IconSend className="h-4 w-4" />}
+                                >
+                                    Correo
+                                </Button>
+                            </div>
                         </div>
-                    </Stack>
+                </Stack>
                 </form>
-            ) : (
-                <Transition mounted={submitted} transition="fade" duration={500} timingFunction="ease">
-                    {(styles) => (
-                        <div
-                            style={styles}
-                            className="flex items-center justify-center h-full w-full text-center"
-                        >
-                            <Text size="lg" color="teal">
-                                ✅ ¡Solicitud enviada! Gracias por tu interés, te responderemos lo antes posible.
-                            </Text>
-                        </div>
-                    )}
-                </Transition>
-
+    ) : (
+        <Transition mounted={submitted} transition="fade" duration={500} timingFunction="ease">
+            {(styles) => (
+                <div
+                    style={styles}
+                    className="flex items-center justify-center h-full w-full text-center"
+                >
+                    <Text size="lg" color="teal">
+                        ✅ ¡Solicitud enviada! Gracias por tu interés, te responderemos lo antes posible.
+                    </Text>
+                </div>
             )}
-        </Card>
+        </Transition>
+
+    )
+}
+        </Card >
     )
 }
