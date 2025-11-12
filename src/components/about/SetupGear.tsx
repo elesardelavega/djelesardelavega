@@ -11,8 +11,9 @@ import setupPhoto from '../../assets/rider/rx2.png'
 export const SetupGear: React.FC = () => {
     const primaryForeground = 'text-[hsl(var(--foreground))]'
     const mutedForeground = 'text-[hsl(var(--muted-foreground))]'
-    const primaryColor = 'bg-[hsl(var(--primary))]'
+    const primaryColor = 'bg-[hsl(var(--primary))] !text-[hsl(var(--background))]'
     const primaryBorder = 'border-[hsl(var(--primary))]'
+    
     const { contactLink } = useNavigation()
 
     return (
@@ -106,6 +107,7 @@ export const SetupGear: React.FC = () => {
                                     classNames={{
                                         inner: 'flex items-center gap-[10px] !w-auto',
                                     }}
+                                    
                                 >
                                     Contácta para más detalles
                                 </Button>
