@@ -14,7 +14,7 @@ export const useScrollStatus = (scrollThreshold: number = 50): boolean => {
     const handleScroll = () => {
       const isCurrentlyScrolled = window.scrollY > scrollThreshold
 
-      //  actualiza  estado y  ref si el valor de scroll ha cambiado
+      //  actualiza estado
       if (isCurrentlyScrolled !== scrolledRef.current) {
         setScrolled(isCurrentlyScrolled)
         scrolledRef.current = isCurrentlyScrolled

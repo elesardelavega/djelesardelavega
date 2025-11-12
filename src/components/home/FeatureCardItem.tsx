@@ -25,7 +25,7 @@ export const FeatureCardItem: FC<FeatureCardItemProps> = ({ data }) => {
             padding={0}
             radius="md"
             withBorder
-            className="w-full bg-[hsl(var(--card))] border-[hsl(var(--border))] shadow-none transition-shadow duration-500 cursor-pointer hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] opacity-0 animate-fade-in-up delay-[${600 + index * 150}ms]"
+            className="w-full bg-[hsl(var(--card))] border-[hsl(var(--border))] shadow-none transition-shadow cursor-pointer hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] opacity-0 animate-fade-in-up delay-[${600 + index * 150}ms]"
         >
             {/* IMAGEN */}
             <CardSection>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Title, Card } from '@mantine/core'
+import { Card } from '@mantine/core'
 import { rem } from '@mantine/core'
 import { type EventHighlightItem } from '../../data/eventHighlightsData'
 
@@ -17,10 +17,10 @@ const EventCard: React.FC<EventCardProps> = ({ item, index }) => {
             radius="lg"
             withBorder
             className={`
-                group bg-[hsl(var(--card))] border-[hsl(var(--border))] 
-                shadow-none transition-all duration-500 cursor-pointer 
+                group w-full bg-[hsl(var(--card))] border-[hsl(var(--border))] 
+                shadow-none transition-all cursor-pointer 
                 hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] 
-                opacity-0 animate-fade-in-up delay-[${600 + index * 100}ms] 
+                opacity-0 animate-fade-in-up
                 ${item.span ? item.span : ''} 
             `}
             style={{
@@ -33,10 +33,9 @@ const EventCard: React.FC<EventCardProps> = ({ item, index }) => {
                     width: '100%',
                     overflow: 'hidden',
                     borderRadius: rem(8),
-                    marginBottom: rem(16),
                     position: 'relative',
                 }}
-                    className="h-auto sm:h-[400px] lg:h-[400px]"
+                    className="h-auto"
                 >
                     {item.type === 'image' ? (
                         <img
@@ -67,11 +66,6 @@ const EventCard: React.FC<EventCardProps> = ({ item, index }) => {
                     )}
                 </div>
             )}
-
-            {/* Título y Descripción */}
-            <Title order={4} className="text-[hsl(var(--foreground))] !mb-0" mb="xs">
-                {item.title}
-            </Title>
         </Card>
     )
 }

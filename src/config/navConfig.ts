@@ -40,7 +40,6 @@ export const SOCIAL_LINKS = [
 ]
 
 //media sounCloud
-// TODO: script/codigo desde el servidor para actualizar automaticamente desde mi perfil de soundcloud (FINAL DE LA WEB ANTES DEL LANZAMIENTO)
 export const FEATURED_MEDIA_CONFIG = {
   title: 'Música',
   description: 'Escucha mi última producción.',

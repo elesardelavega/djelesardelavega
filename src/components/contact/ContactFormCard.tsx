@@ -8,7 +8,7 @@ const cardBaseClasses = `
   h-auto
   lg:max-h-[400px]
   bg-[hsl(var(--card))] border-[hsl(var(--border))]
-  shadow-none transition-all duration-500
+  shadow-none transition-all
   hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))]
   opacity-0 animate-fade-in-up text-white
 `

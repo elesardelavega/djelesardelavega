@@ -6,8 +6,13 @@ import { FeaturedMedia } from '../components/home/FeaturedMedia'
 export const HomePage: React.FC = () => {
     return (
         <>
+            {/* Principal */}
             <HeroSection />
+
+            {/* Cards */}
             <FeatureCards />
+
+            {/* Media */}
             <FeaturedMedia />
         </>
     )

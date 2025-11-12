@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
                         />
                     </Link>
 
-                    {/* Redes Sociales (Refactorizado) */}
+                    {/* Redes Sociales */}
                     <div className="flex space-x-6">
                         {socialLinks.map((item) => {
                             const IconComponent = item.icon as React.FC<{ className: string }>

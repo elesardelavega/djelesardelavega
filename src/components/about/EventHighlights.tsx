@@ -1,24 +1,54 @@
 import React from 'react'
 import EventCard from './EventCard'
-import { eventHighlightItems } from '../../data/eventHighlightsData'
+import { eventHighlightItems, eventDates } from '../../data/eventHighlightsData'
+import { Title, Card, Text } from '@mantine/core'
 
 const EventHighlights: React.FC = () => {
     return (
         <section className="w-full py-10 bg-[hsl(var(--background))]" id="actuaciones">
-            <div className="mx-auto max-w-[1440px] px-8">
+            <div className="mx-auto max-w-[1440px] px-8 flex flex-col lg:flex-row gap-12 items-stretch min-h-[400px]">
 
-                {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {eventHighlightItems.map((item, index) => (
-                        <EventCard
-                            key={index}
-                            item={item}
-                            index={index}
-                        />
-                    ))}
+                {/* imagen */}
+                <div className="w-full lg:w-2/3 flex flex-col">
+                    <EventCard item={eventHighlightItems[0]} index={0} />
                 </div>
+
+                {/* calendario */}
+                <div className="w-full lg:w-1/3 flex">
+                    <Card
+                        shadow="xl"
+                        radius="lg"
+                        withBorder
+                        padding="lg"
+                        className={`
+                        flex-1 h-full
+                        group w-full bg-[hsl(var(--card))] border-[hsl(var(--border))] 
+                        shadow-none transition-all cursor-pointer 
+                        hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] 
+                        opacity-0 animate-fade-in-up
+                    º`}
+                    >
+                        <Title order={3} className="text-[hsl(var(--foreground))] mb-6">
+                            Próximos Eventos 📅
+                        </Title>
+                        <div className="space-y-4">
+                            {eventDates.map((event, i) => (
+                                <div key={i} className="border-b border-[hsl(var(--border))] pb-2">
+                                    <Text className="text-sm text-[hsl(var(--muted-foreground))] uppercase">
+                                        {event.date}
+                                    </Text>
+                                    <Text className="text-md font-semibold text-[hsl(var(--foreground))]">
+                                        {event.city} – {event.venue}
+                                    </Text>
+                                </div>
+                            ))}
+                        </div>
+                    </Card>
+                </div>
+
             </div>
         </section>
+
     )
 }
 

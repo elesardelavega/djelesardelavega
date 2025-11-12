@@ -27,7 +27,7 @@ const PhotoCardList: React.FC<RenderCardProps> = ({ photos, openLightbox }) => (
                 onClick={() => openLightbox(photo)}
                 className={`
                     group w-full bg-[hsl(var(--card))] border-[hsl(var(--border))]
-                    shadow-none transition-all duration-500 cursor-pointer
+                    shadow-none transition-all cursor-pointer
                     hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))]
                     opacity-0 animate-fade-in-up h-full
                     col-span-1

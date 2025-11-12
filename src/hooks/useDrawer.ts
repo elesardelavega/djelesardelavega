@@ -9,12 +9,11 @@ export const useDrawer = () => {
   const drawerRef = useRef<HTMLDivElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
 
-  // cerrar el drawer
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const targetNode = event.target as Node
 
-      // Ignora el clic si dentro
+      // Ignora el  si dentro
       if (
         (drawerRef.current && drawerRef.current.contains(targetNode)) ||
         (buttonRef.current && buttonRef.current.contains(targetNode))
@@ -29,12 +28,11 @@ export const useDrawer = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [drawerOpened])
 
-  //  alternar el estado
+  //  alternar 
   const toggleDrawer = () => {
     setDrawerOpened((prev) => !prev)
   }
 
-  //  cerrar el drawer
   const closeDrawer = () => {
     setDrawerOpened(false)
   }

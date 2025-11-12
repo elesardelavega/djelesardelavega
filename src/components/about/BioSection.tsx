@@ -30,7 +30,7 @@ const BioSection: React.FC = () => {
                     withBorder
                     className="
                         group w-full bg-[hsl(var(--card))] border-[hsl(var(--border))] 
-                        shadow-none transition-all duration-500 cursor-pointer 
+                        shadow-none transition-all cursor-pointer 
                         hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] 
                         opacity-0 animate-fade-in-up
                     "
@@ -86,7 +86,7 @@ const BioSection: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Imagen con efecto hover */}
+                        {/* Imagen */}
                         <div className="desk:w-5/12 flex justify-center pt-8 desk:pt-0">
                             <img
                                 src={foto}

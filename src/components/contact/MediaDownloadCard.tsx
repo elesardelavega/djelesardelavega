@@ -11,7 +11,7 @@ const cardBaseClasses = `
   max-h-[400px]
   h-full
   bg-[hsl(var(--card))] border-[hsl(var(--border))]
-  shadow-none transition-all duration-500
+  shadow-none transition-all
   hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))]
   opacity-0 animate-fade-in-up text-white
 `
@@ -38,7 +38,7 @@ export const MediaDownloadCard = () => {
                             controlsOffset="xs"
                             slideSize="100%"
                             classNames={{
-                                controls: 'absolute left-24 right-24 top-0 bottom-0',
+                                controls: 'absolute left-6 sm:left-24 right-6 sm:right-24 top-0 bottom-0',
                                 control: 'bg-transparent text-white hover:shadow-none !border-none !rounded-none',
                             }}
                         >
@@ -82,7 +82,7 @@ export const MediaDownloadCard = () => {
                             withControls
                             classNames={{
                                 root: '!px-4 sm:!px-12 md:!px-32',
-                                controls: 'absolute left-6 right-6 top-0 bottom-0',
+                                controls: 'absolute left-2 sm:left-6 right-2 sm:right-6 top-0 bottom-0',
                                 control: 'bg-transparent text-white hover:shadow-none !border-none !rounded-none',
                             }}
                         >

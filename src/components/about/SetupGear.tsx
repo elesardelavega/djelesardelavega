@@ -39,7 +39,7 @@ export const SetupGear: React.FC = () => {
                     withBorder
                     className={`
                         group w-full overflow-hidden bg-[hsl(var(--card))] border-[hsl(var(--border))] 
-                        shadow-none transition-all duration-500 cursor-pointer 
+                        shadow-none transition-all cursor-pointer 
                         hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] 
                         opacity-0 animate-fade-in-up
                     `}

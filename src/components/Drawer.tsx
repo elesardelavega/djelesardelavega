@@ -19,7 +19,7 @@ export const Drawer: React.FC<DrawerProps> = ({
 }) => {
     return (
         <>
-            {/* Overlay (sin cambios) */}
+            {/* Overlay */}
             {drawerOpened && (
                 <div
                     className="fixed inset-0 top-16 bg-black/50 z-40"
@@ -32,7 +32,7 @@ export const Drawer: React.FC<DrawerProps> = ({
                 ref={drawerRef}
                 className={`fixed top-20 right-0 z-50 w-full sm:w-1/3 h-[calc(100%-4rem)] bg-[hsl(var(--background))] border-l border-[hsl(var(--border))] shadow-md flex flex-col p-4 transform transition-transform duration-300 ${drawerOpened ? 'translate-x-0' : 'translate-x-full'}`}
             >
-                {/* Contenido del drawer */}
+                {/* Contenido */}
                 {navLinks.map(link =>
                     <NavLink
                         key={link.href}
