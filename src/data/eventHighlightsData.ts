@@ -21,7 +21,7 @@ export const eventHighlightItems: EventHighlightItem[] = [
     src: sanma1 as string,
     type: 'image',
     title: 'San Mateo de gallego, Zaragoza',
-    span: 'md:col-span-2 lg:col-span-2 lg:row-span-1',
+    span: 'md:col-span-2 lg:col-span-2 lg:row-span-1 sm:col-span-2',
   },
   {
     src: brutalAsset as string,
@@ -59,4 +59,4 @@ export const eventHighlightItems: EventHighlightItem[] = [
     title: 'Aniñon, Zaragoza',
     span: 'lg:col-span-1',
   },
-]
+];

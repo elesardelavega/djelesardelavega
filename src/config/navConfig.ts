@@ -42,8 +42,8 @@ export const SOCIAL_LINKS = [
 //media sounCloud
 // TODO: script/codigo desde el servidor para actualizar automaticamente desde mi perfil de soundcloud (FINAL DE LA WEB ANTES DEL LANZAMIENTO)
 export const FEATURED_MEDIA_CONFIG = {
-  title: 'Mi Última Producción',
-  description: 'Escucha mi última producción. El set que marcó la temporada.',
+  title: 'Música',
+  description: 'Escucha mi última producción.',
   badge: {
     label: 'Kassandra Feeling (Mashup) – ElesarDeLaVega',
     href: 'https://soundcloud.com/elesardelavega/kassandra-feeling-mashup-elesardelavega',

@@ -22,7 +22,7 @@ export const MediaDownloadCard = () => {
     const primaryBorder = 'border-[hsl(var(--primary))]'
 
     return (
-        <section className="w-full pb-20 bg-[hsl(var(--background))]" id="media">
+        <section className="w-full py-10 bg-[hsl(var(--background))]" id="media">
             <div className="mx-auto max-w-[1440px] px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
                 {/* Slide izquierda */}

@@ -11,7 +11,7 @@ export const FeaturedMedia: React.FC = () => {
     )
 
     return (
-        <section className="w-full pb-20 bg-[hsl(var(--background))]">
+        <section className="w-full py-10 bg-[hsl(var(--background))]">
             <div className="mx-auto max-w-[1440px] px-8 flex flex-col desk:flex-row items-center justify-between gap-12">
 
                 {/* Contenido y CTA */}

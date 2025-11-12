@@ -17,8 +17,9 @@ export const SetupGear: React.FC = () => {
     const { contactLink } = useNavigation()
 
     return (
-        <section className="w-full pb-20 bg-[hsl(var(--background))]" id="setup-rider">
-            <div className="mx-auto max-w-[1440px] px-8">
+        <section className="w-full py-10 bg-[hsl(var(--background))]" id="setup-rider">
+            <div className="mx-auto max-w-[1440px] px-4 sm:px-8">
+
 
                 {/* TÍTULO */}
                 <Title
@@ -37,7 +38,7 @@ export const SetupGear: React.FC = () => {
                     radius="lg"
                     withBorder
                     className={`
-                        group w-full bg-[hsl(var(--card))] border-[hsl(var(--border))] 
+                        group w-full overflow-hidden bg-[hsl(var(--card))] border-[hsl(var(--border))] 
                         shadow-none transition-all duration-500 cursor-pointer 
                         hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))] 
                         opacity-0 animate-fade-in-up
@@ -61,7 +62,7 @@ export const SetupGear: React.FC = () => {
                             </Text>
 
                             {/* Detalle */}
-                            <ul className="space-y-6 text-left list-none pl-0">
+                            <ul className="space-y-6 text-left list-none px-4 sm:px-0">
                                 <li className={`${primaryForeground}`}>
                                     <Group gap="xs" align="center">
                                         <IconDisc style={{ width: rem(20), height: rem(20) }} className={primaryForeground} />
@@ -93,11 +94,11 @@ export const SetupGear: React.FC = () => {
                             </ul>
 
                             {/* CTA */}
-                            <Group className="justify-center desk:justify-start pt-6">
+                            <Group className="w-full px-4 sm:px-0 justify-center desk:justify-start pt-6">
                                 <Button
                                     component={Link}
                                     to={contactLink.href}
-                                    className={`inline-flex items-center rounded-lg px-8 py-2 text-lg font-bold shadow-lg 
+                                    className={`max-w-[320px] inline-flex items-center rounded-lg px-8 py-2 text-lg font-bold shadow-lg 
                                         ${primaryColor} ${primaryForeground} ${primaryBorder}
                                         transition duration-300 transform ease-in-out
                                         animate-pulse-shadow hover:shadow-2xl`}
@@ -105,7 +106,7 @@ export const SetupGear: React.FC = () => {
                                     radius="md"
                                     rightSection={<IconPhone className="h-5 w-5" />}
                                     classNames={{
-                                        inner: 'flex items-center gap-[10px] !w-auto',
+                                        inner: 'flex items-center gap-[5px] !w-auto',
                                     }}
                                     
                                 >
@@ -119,7 +120,7 @@ export const SetupGear: React.FC = () => {
                             <img
                                 src={setupPhoto}
                                 alt="Fotografía del equipo de DJing y setup técnico"
-                                className="transition-transform duration-700 ease-out group-hover:scale-95 sm:!max-w-none py-8"
+                                className="transition-transform duration-700 ease-out group-hover:scale-95 max-w-full py-8"
                                 style={{
                                     width: '100%',
                                     maxWidth: rem(500),

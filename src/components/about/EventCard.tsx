@@ -36,7 +36,7 @@ const EventCard: React.FC<EventCardProps> = ({ item, index }) => {
                     marginBottom: rem(16),
                     position: 'relative',
                 }}
-                    className="h-auto lg:h-[400px]"
+                    className="h-auto sm:h-[400px] lg:h-[400px]"
                 >
                     {item.type === 'image' ? (
                         <img

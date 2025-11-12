@@ -3,7 +3,7 @@ import { ContactFormCard } from "./ContactFormCard"
 
 const ContactForm: React.FC = () => {
     return (
-        <section className="w-full py-20 bg-[hsl(var(--background))]" id="contacto">
+        <section className="w-full py-10 bg-[hsl(var(--background))]" id="contacto">
             <div className="mx-auto max-w-[1440px] px-8
                 grid gap-8 items-start
                 grid-cols-1

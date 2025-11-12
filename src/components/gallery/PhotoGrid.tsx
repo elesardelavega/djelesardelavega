@@ -60,7 +60,7 @@ const PhotoGrid: React.FC = () => {
     };
 
     return (
-        <section className="w-full py-20 bg-[hsl(var(--background))] " id="galeria">
+        <section className="w-full py-10 bg-[hsl(var(--background))] " id="galeria">
             <div className="mx-auto max-w-[1440px] px-8">
 
                 {/* TÍTULO */}

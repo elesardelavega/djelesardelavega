@@ -19,7 +19,7 @@ const BioSection: React.FC = () => {
     const responsiveTextSize = 'text-sm desk:text-sm desktop:text-lg'
 
     return (
-        <section className="w-full py-20 bg-[hsl(var(--background))]">
+        <section className="w-full py-10 bg-[hsl(var(--background))]">
             <div className="mx-auto max-w-[1440px] px-8">
 
                 {/* Card principal */}

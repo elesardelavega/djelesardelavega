@@ -4,7 +4,7 @@ import { eventHighlightItems } from '../../data/eventHighlightsData'
 
 const EventHighlights: React.FC = () => {
     return (
-        <section className="w-full pb-20 bg-[hsl(var(--background))]" id="actuaciones">
+        <section className="w-full py-10 bg-[hsl(var(--background))]" id="actuaciones">
             <div className="mx-auto max-w-[1440px] px-8">
 
                 {/* Grid */}

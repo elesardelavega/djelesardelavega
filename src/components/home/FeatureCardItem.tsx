@@ -32,7 +32,7 @@ export const FeatureCardItem: FC<FeatureCardItemProps> = ({ data }) => {
                 <Image
                     src={data.image}
                     alt={data.imageAlt}
-                    className='w-full h-[450px] object-cover'
+                    className='w-full h-[400px] object-cover'
                 />
             </CardSection>
 
