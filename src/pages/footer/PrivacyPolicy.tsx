@@ -7,11 +7,12 @@ export const PrivacyPolicyPage: React.FC = () => {
             <section className="min-h-screen w-full bg-[hsl(var(--background))] flex justify-center items-start py-16">
                 <div
                     className="
-            w-full max-w-[1440px] mx-auto p-10 
-            bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-lg
-            shadow-none transition-all cursor-pointer
-            hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))]
-          "
+                        w-full max-w-[1440px] mx-auto p-10 
+                        bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-lg
+                        shadow-none transition-all cursor-pointer
+                        hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))]
+                        space-y-6
+                    "
                 >
                     <h1 className="text-3xl font-bold text-white mb-6">
                         Política de Privacidad

@@ -7,13 +7,14 @@ export const CookiePolicyPage: React.FC = () => {
             <section className="min-h-screen w-full bg-[hsl(var(--background))] flex justify-center items-start py-16">
                 <div
                     className="
-            w-full max-w-[1440px] mx-auto p-10 
-            bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-lg
-            shadow-none transition-all cursor-pointer
-            hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))]
-          "
+                        w-full max-w-[1440px] mx-auto p-10 
+                        bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-lg
+                        shadow-none transition-all
+                        hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))]
+                        space-y-6
+                    "
                 >
-                    <h1 className="text-3xl font-bold text-[hsl(var(--foreground))] mb-6">
+                    <h1 className="text-3xl font-bold text-white mb-6">
                         Política de Cookies
                     </h1>
 
@@ -24,7 +25,7 @@ export const CookiePolicyPage: React.FC = () => {
                         para reconocerte y mejorar el servicio ofrecido.
                     </p>
 
-                    <h2 className="mt-6 text-xl font-semibold">Tipos de cookies</h2>
+                    <h2 className="mt-6 text-xl font-semibold text-white">Tipos de cookies</h2>
                     <p>Según la entidad que las gestione:</p>
                     <ul className="list-disc pl-6 space-y-2">
                         <li><strong>Cookies propias:</strong> enviadas desde nuestro dominio y necesarias para el servicio.</li>
@@ -47,7 +48,7 @@ export const CookiePolicyPage: React.FC = () => {
                         <li><strong>Redes sociales externas:</strong> facilitan la interacción con plataformas como Facebook, Instagram o YouTube.</li>
                     </ul>
 
-                    <h2 className="mt-6 text-xl font-semibold">Desactivación y eliminación</h2>
+                    <h2 className="mt-6 text-xl font-semibold text-white">Desactivación y eliminación</h2>
                     <p>
                         Puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo mediante la configuración de tu navegador.
                         Ten en cuenta que al desactivar cookies algunos servicios pueden dejar de funcionar correctamente.
@@ -60,15 +61,15 @@ export const CookiePolicyPage: React.FC = () => {
                         <li>Edge: <a href="http://windows.microsoft.com/es-es/windows-vista/Block-or-allow-cookies">Guía oficial</a></li>
                     </ul>
 
-                    <h2 className="mt-6 text-xl font-semibold">Aceptación de la política</h2>
+                    <h2 className="mt-6 text-xl font-semibold text-white">Aceptación de la política</h2>
                     <p>
                         Al navegar en nuestro sitio web, asumimos que aceptas el uso de cookies. No obstante, mostramos un aviso
                         informativo en cada inicio de sesión para que seas consciente y puedas modificar tu configuración en cualquier momento.
                     </p>
 
-                    <h2 className="mt-6 text-xl font-semibold">Contacto</h2>
+                    <h2 className="mt-6 text-xl font-semibold text-white">Contacto</h2>
                     <p>
-                        Si tienes dudas sobre esta política de cookies, puedes escribirnos a: <strong>[tu correo de contacto]</strong>.
+                        Si tienes dudas sobre esta política de cookies, puedes escribirnos a: <strong>elesarvega@gmail.com</strong>.
                     </p>
                 </div>
             </section>
