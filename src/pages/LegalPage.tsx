@@ -5,7 +5,7 @@ interface LegalPageProps {
     children: React.ReactNode
 }
 
-export const LegalPage: FC<LegalPageProps> = ({ title, children }) => {
+export const LegalPage: FC<LegalPageProps> = ({ children }) => {
     return (
         <section className="min-h-[calc(100vh-4rem)]">
             {/* Contenido */}
