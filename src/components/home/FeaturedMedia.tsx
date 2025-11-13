@@ -10,6 +10,10 @@ export const FeaturedMedia: React.FC = () => {
         '<iframe class="w-full h-[190px] border-none" loading="lazy"'
     )
 
+    const primaryColor = 'bg-[hsl(var(--primary))]'
+    const primaryForeground = '!text-[hsl(var(--background))]'
+    const primaryBorder = 'border-[hsl(var(--primary))]'
+
     return (
         <section className="w-full py-10 bg-[hsl(var(--background))]">
             <div className="mx-auto max-w-[1440px] px-8 flex flex-col desk:flex-row items-center justify-between gap-12">
@@ -25,21 +29,26 @@ export const FeaturedMedia: React.FC = () => {
                     </Text>
 
                     {/* Badge y Enlace */}
-                    <a
-                        href={featuredMediaConfig.badge.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="self-center desk:self-start transition duration-300 hover:scale-[1.03]"
+                    <button
+                        type="button"
+                        className={`inline-flex items-center justify-center rounded-lg py-1 shadow-lg 
+                        ${primaryColor} ${primaryForeground} ${primaryBorder}
+                        transition duration-300 transform ease-in-out
+                        animate-pulse-shadow hover:shadow-2xl cursor-pointer`}
+                        onClick={() => window.open(featuredMediaConfig.badge.href, '_blank')}
                     >
                         <Badge
                             variant="filled"
                             radius="sm"
                             size="lg"
-                            className={`bg-[hsl(var(--${featuredMediaConfig.badge.color}))] text-[hsl(var(--secondary-foreground))]`}
+                            className={`px-2 py-2 text-sm
+                            ${primaryColor} ${primaryForeground} ${primaryBorder}
+                            animate-pulse-shadow hover:shadow-2xl cursor-pointer`}
                         >
                             {featuredMediaConfig.badge.label}
                         </Badge>
-                    </a>
+                    </button>
+
                 </div>
 
                 {/* Reproductor, TODO: editar componente de iframe a color negro y cuadrar estilos y responisve con mi paleta de colores etc... */}

@@ -121,7 +121,10 @@ export const ContactFormCard = () => {
                                     variant="filled"
                                     radius="md"
                                     rightSection={<IconPhone className="h-4 w-4" />}
-                                    className={`inline-flex items-center rounded-lg px-6 py-2 text-sm font-semibold shadow-md ${primaryColor} ${primaryForeground} ${primaryBorder} transition duration-300 ease-in-out hover:shadow-lg`}
+                                    className={`inline-flex items-center rounded-lg px-8 py-2 text-MD font-bold shadow-lg 
+                                     ${primaryColor} ${primaryForeground} ${primaryBorder}
+                                     transition duration-300 transform ease-in-out
+                                     animate-pulse-shadow hover:shadow-2xl`}
                                 >
                                     WhatsApp
                                 </Button>
@@ -131,7 +134,10 @@ export const ContactFormCard = () => {
                                     variant="filled"
                                     radius="md"
                                     rightSection={<IconSend className="h-4 w-4" />}
-                                    className={`inline-flex items-center rounded-lg px-6 py-2 text-sm font-semibold shadow-md ${primaryColor} ${primaryForeground} ${primaryBorder} transition duration-300 ease-in-out hover:shadow-lg`}
+                                    className={`inline-flex items-center rounded-lg px-8 py-2 text-MD font-bold shadow-lg 
+                                     ${primaryColor} ${primaryForeground} ${primaryBorder}
+                                     transition duration-300 transform ease-in-out
+                                     animate-pulse-shadow hover:shadow-2xl`}
                                 >
                                     Correo
                                 </Button>
