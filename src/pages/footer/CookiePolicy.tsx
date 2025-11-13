@@ -4,7 +4,7 @@ import { LegalPage } from '../LegalPage'
 export const CookiePolicyPage: React.FC = () => {
     return (
         <LegalPage title="Política de Cookies">
-            <section className="min-h-screen w-full bg-[hsl(var(--background))] flex justify-center items-start py-16">
+            <section className="min-h-screen w-full bg-[hsl(var(--background))] flex justify-center items-start py-10 sm:pl-4 pl-4 pr-4 sm:pr-4">
                 <div
                     className="
                         w-full max-w-[1440px] mx-auto p-10 
