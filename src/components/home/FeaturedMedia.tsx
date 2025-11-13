@@ -43,6 +43,7 @@ export const FeaturedMedia: React.FC = () => {
                             size="lg"
                             className={`px-2 py-2 text-sm
                             ${primaryColor} ${primaryForeground} ${primaryBorder}
+                            transition duration-300 transform ease-in-out
                             animate-pulse-shadow hover:shadow-2xl cursor-pointer`}
                         >
                             {featuredMediaConfig.badge.label}
