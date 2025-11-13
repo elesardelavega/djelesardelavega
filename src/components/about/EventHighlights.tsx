@@ -1,7 +1,7 @@
 import React from 'react'
 import EventCard from './EventCard'
 import { eventHighlightItems, eventDates } from '../../data/eventHighlightsData'
-import { Title, Card, Text } from '@mantine/core'
+import { Title, Card } from '@mantine/core'
 
 const EventHighlights: React.FC = () => {
     return (
