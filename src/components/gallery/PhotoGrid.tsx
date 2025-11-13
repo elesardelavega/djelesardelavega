@@ -50,7 +50,7 @@ const PhotoGrid: React.FC = () => {
 
     // Lightbox
     const [opened, setOpened] = useState(false)
-    const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null)
+    const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string; location?: string } | null>(null)
 
     const chunkedPhotos = useMemo(() => chunkArray(photoItems, photosPerSlide), [photoItems])
 
@@ -144,7 +144,7 @@ const PhotoGrid: React.FC = () => {
                             <IconX size="1.5rem" />
                         </Button>
                         <Text size="lg" ta="center" mt="sm" className="text-[hsl(var(--foreground))]">
-                            {selectedImage.alt}
+                            {selectedImage.alt} - {selectedImage.location}
                         </Text>
                     </>
                 )}

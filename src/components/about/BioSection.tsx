@@ -57,7 +57,7 @@ const BioSection: React.FC = () => {
 
                             {/* Párrafo 2 con tamaño responsivo */}
                             <Text size="lg" className={`text-[hsl(var(--muted-foreground))] font-sans pb-2 ${responsiveTextSize}`}>
-                                A lo largo de su carrera, Elesar ha llevado su música a pueblos clave de Aragón como Aniñón, Uncastillo, San Mateo de Gállego, Villanueva de Gállego, Villamayor de Gállego, Zuera, Monzón, Castejón de Monegros, Alagón y Azuara, entre muchos otros, conquistando también discotecas de referencia como Parros, Mamanucca, La Casa del Loco, Oasis y Discoteca Darazú en Zaragoza.
+                                A lo largo de su carrera, Elesar ha llevado su música a pueblos clave de Aragón como Aniñón, Uncastillo, San Mateo de Gállego, Villanueva de Gállego, Villamayor de Gállego, Zuera, Monzón, Castejón de Monegros, Alagón y Azuara, entre muchos otros, conquistando también discotecas de referencia como Parros, Mamanucca, La Casa del Loco, Oasis y Darazú en Zaragoza.
                             </Text>
 
                             {/* Párrafo 3 con tamaño responsivo */}

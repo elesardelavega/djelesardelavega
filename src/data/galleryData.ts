@@ -59,7 +59,7 @@ export const photoItems: PhotoItem[] = [
   {
     src: darazuImg as string,
     alt: 'Darazu',
-    location: 'Zaragoza',
+    location: 'Zuera',
     event: 'Discoteca',
     span: 'col-span-1',
     showOnMobile: false,
@@ -75,7 +75,7 @@ export const photoItems: PhotoItem[] = [
   {
     src: lajungla1Img as string,
     alt: 'La Jungla',
-    location: 'Zaragoza',
+    location: 'Zuera',
     event: 'Discoteca',
     span: 'col-span-1',
     showOnMobile: false,
@@ -98,7 +98,7 @@ export const photoItems: PhotoItem[] = [
   },
   {
     src: villamayorImg as string,
-    alt: 'Villamayor',
+    alt: 'Villamayor de Gállego',
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
@@ -106,7 +106,7 @@ export const photoItems: PhotoItem[] = [
   },
   {
     src: villanuevaImg as string,
-    alt: 'Villanueva',
+    alt: 'Villanueva de Gállego',
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
@@ -114,7 +114,7 @@ export const photoItems: PhotoItem[] = [
   },
   {
     src: villanueva2Img as string,
-    alt: 'Villanueva',
+    alt: 'Villanueva de Gállego',
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
@@ -122,7 +122,7 @@ export const photoItems: PhotoItem[] = [
   },
   {
     src: sanmateo4Img as string,
-    alt: 'San Mateo',
+    alt: 'San Mateo de Gállego',
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
@@ -131,7 +131,7 @@ export const photoItems: PhotoItem[] = [
   {
     src: brutalbar2Img as string,
     alt: 'Brutal Bar',
-    location: 'Zaragoza',
+    location: 'San Mateo de Gállego',
     event: 'Discoteca',
     span: 'col-span-1',
     showOnMobile: true,
@@ -147,14 +147,14 @@ export const photoItems: PhotoItem[] = [
   {
     src: darazu1Img as string,
     alt: 'Darazu',
-    location: 'Zaragoza',
+    location: 'Zuera',
     event: 'Discoteca',
     span: 'col-span-2',
     showOnMobile: true,
   },
   {
     src: jaulaImg as string,
-    alt: 'San Mateo',
+    alt: 'San Mateo de Gállego',
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
@@ -162,15 +162,15 @@ export const photoItems: PhotoItem[] = [
   },
   {
     src: brutalImg as string,
-    alt: 'Brutal',
-    location: 'Zaragoza',
+    alt: 'Brutal Bar',
+    location: 'San Mateo de Gállego',
     event: 'Discoteca',
     span: 'col-span-1',
     showOnMobile: true,
   },
   {
     src: eventprivate2Img as string,
-    alt: 'Brutal',
+    alt: 'Evento Privado',
     location: 'Zaragoza',
     event: 'Discoteca',
     span: 'col-span-1',
@@ -178,7 +178,7 @@ export const photoItems: PhotoItem[] = [
   },
   {
     src: jaula2Img as string,
-    alt: 'San Mateo',
+    alt: 'San Mateo de Gállego',
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
@@ -186,7 +186,7 @@ export const photoItems: PhotoItem[] = [
   },
   {
     src: sanmateo6Img as string,
-    alt: 'San Mateo',
+    alt: 'San Mateo de Gállego',
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-2',

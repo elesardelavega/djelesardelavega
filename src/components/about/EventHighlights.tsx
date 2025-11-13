@@ -36,7 +36,11 @@ const EventHighlights: React.FC = () => {
                                 <div key={i} className="border-b border-[hsl(var(--border))] pb-4">
                                     <div className="flex justify-between text-xs text-[hsl(var(--muted-foreground))] uppercase">
                                         <span>{event.date}</span>
-                                        <span>{event.city} - {event.venue}</span>
+                                        {(event.city || event.venue) && (
+                                            <span>
+                                                {event.city}{event.city && event.venue ? ' – ' : ''}{event.venue}
+                                            </span>
+                                        )}
                                     </div>
                                     <div className="flex justify-between text-md text-[hsl(var(--foreground))] font-semibold">
                                         <span>{event.type ?? 'Evento'}</span>
