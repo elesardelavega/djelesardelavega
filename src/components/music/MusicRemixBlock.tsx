@@ -37,6 +37,7 @@ export const MusicRemixBlock = () => {
                                 src={track.cover}
                                 alt={`Portada de ${track.title}`}
                                 className="rounded-md mb-4 w-full object-cover"
+                                loading="eager"
                                 style={{
                                     objectFit: "cover",
                                 }}

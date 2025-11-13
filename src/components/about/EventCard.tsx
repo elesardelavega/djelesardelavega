@@ -42,6 +42,7 @@ const EventCard: React.FC<EventCardProps> = ({ item, index }) => {
                             src={item.src}
                             alt={item.title}
                             className="w-full h-full"
+                            loading="eager"
                             style={{
                                 objectFit: 'cover',
                             }}

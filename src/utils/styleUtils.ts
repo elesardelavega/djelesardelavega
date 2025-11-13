@@ -1,6 +1,6 @@
 interface NavLinkClassProps {
   isActive: boolean
-  isMobile?: boolean;
+  isMobile?: boolean
 }
 
 /**

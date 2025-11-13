@@ -37,6 +37,7 @@ export const Header: React.FC = () => {
                             src={Logos.logoBlancoBorde}
                             alt="Logo Elesar De La Vega"
                             className="h-12 w-auto object-contain"
+                            loading="eager"
                         />
                     </Link>
 

@@ -192,7 +192,7 @@ export const photoItems: PhotoItem[] = [
     span: 'col-span-2',
     showOnMobile: true,
   },
-];
+]
 
 export const chunkArray = (arr: PhotoItem[], size: number) => {
   const chunkedArray = []

@@ -1,12 +1,12 @@
 // Assets
-import sanma1 from '../assets/gallery/bohalar.jpg';
+import sanma1 from '../assets/gallery/bohalar.jpg'
 
 // Tipos
 export interface EventHighlightItem {
   src: string
   type: 'image' | 'video'
   title: string
-  span?: string;
+  span?: string
 }
 
 export interface EventDateItem {
@@ -24,7 +24,7 @@ export const eventHighlightItems: EventHighlightItem[] = [
     type: 'image',
     title: 'San Mateo de Gallego, Zaragoza',
   },
-];
+]
 
 export const eventDates: EventDateItem[] = [
   {
@@ -58,4 +58,4 @@ export const eventDates: EventDateItem[] = [
     type: 'Discomovil Reyes',
     time: 'Libre',
   },
-];
+]

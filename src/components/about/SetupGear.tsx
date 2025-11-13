@@ -119,8 +119,9 @@ export const SetupGear: React.FC = () => {
                         <div className="desk:w-5/12 flex justify-center pt-8 desk:pt-0 shadow-none">
                             <img
                                 src={setupPhoto}
-                                alt="Fotografía del equipo de DJing y setup técnico"
+                                alt="Fotografía del equipo"
                                 className="transition-transform duration-700 ease-out group-hover:scale-95 max-w-full py-8"
+                                loading="lazy"
                                 style={{
                                     width: '100%',
                                     maxWidth: rem(500),

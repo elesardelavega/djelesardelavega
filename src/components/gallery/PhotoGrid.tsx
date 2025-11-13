@@ -11,7 +11,7 @@ const GRID_COLUMNS_MOBILE = 'grid-cols-2'
 const GRID_COLUMNS_DESKTOP = 'lg:grid-cols-4'
 
 interface RenderCardProps {
-    photos: typeof photoItems;
+    photos: typeof photoItems
     openLightbox: (image: { src: string; alt: string }) => void
 }
 
@@ -39,6 +39,7 @@ const PhotoCardList: React.FC<RenderCardProps> = ({ photos, openLightbox }) => (
                     alt={photo.alt}
                     className="w-full h-full max-h-[300px] lg:max-h-[400px] object-cover transition duration-300 group-hover:opacity-85"
                     style={{ borderRadius: rem(6) }}
+                    loading='eager'
                 />
             </Card>
         ))}
@@ -57,7 +58,7 @@ const PhotoGrid: React.FC = () => {
     const openLightbox = (image: { src: string; alt: string }) => {
         setSelectedImage(image)
         setOpened(true)
-    };
+    }
 
     return (
         <section className="w-full py-10 bg-[hsl(var(--background))] " id="galeria">
@@ -122,6 +123,7 @@ const PhotoGrid: React.FC = () => {
                         <img
                             src={selectedImage.src}
                             alt={selectedImage.alt}
+                            loading='eager'
                             style={{
                                 width: '100%',
                                 height: 'auto',

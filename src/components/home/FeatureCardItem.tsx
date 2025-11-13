@@ -33,6 +33,7 @@ export const FeatureCardItem: FC<FeatureCardItemProps> = ({ data }) => {
                     src={data.image}
                     alt={data.imageAlt}
                     className='w-full h-[400px] object-cover'
+                    loading='lazy'
                 />
             </CardSection>
 

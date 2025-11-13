@@ -44,7 +44,7 @@ export const MediaDownloadCard = () => {
                         >
                             {fotos.map((src, i) => (
                                 <Carousel.Slide key={i}>
-                                    <img src={src} alt={`Foto ${i + 1}`} className="w-full h-full object-contain rounded-md" />
+                                    <img src={src} alt={`Foto ${i + 1}`} className="w-full h-full object-contain rounded-md" loading="eager" />
                                 </Carousel.Slide>
                             ))}
                         </Carousel>
@@ -96,6 +96,7 @@ export const MediaDownloadCard = () => {
                                         src={src}
                                         alt={`Logo ${i + 1}`}
                                         className="w-[160px] sm:w-[200px] md:w-[240px] h-auto object-contain"
+                                        loading="eager"
                                     />
                                 </Carousel.Slide>
 

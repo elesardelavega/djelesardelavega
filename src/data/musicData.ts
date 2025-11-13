@@ -55,8 +55,8 @@ export const remixes = [
   },
 ]
 
-import sesionCrossfit from '../assets/songs/sesion/crossfit.png';
-import sesionTechno from '../assets/songs/sesion/techno.webp';
+import sesionCrossfit from '../assets/songs/sesion/crossfit.png'
+import sesionTechno from '../assets/songs/sesion/techno.webp'
 
 export const sesiones = [
   {
@@ -71,4 +71,4 @@ export const sesiones = [
     cover: sesionTechno,
     link: 'https://soundcloud.com/elesardelavega/sesion-techno-bounce-makina-elesar-de-la-vega',
   },
-];
+]

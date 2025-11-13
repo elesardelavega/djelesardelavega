@@ -49,6 +49,7 @@ export const MusicSesionBlock = () => {
                                 alt={`Portada de ${track.title}`}
                                 className="rounded-md mb-4 w-full object-cover"
                                 style={{ objectFit: "cover" }}
+                                loading="lazy"
                             />
                             <Title order={4} className={`text-md font-bold mb-2 ${primaryForeground} line-clamp-2 min-h-[3rem]`}>
                                 {track.title}

@@ -91,6 +91,7 @@ const BioSection: React.FC = () => {
                             <img
                                 src={foto}
                                 alt={`Retrato destacado de ${NombreArtista}`}
+                                loading="eager"
                                 className="transition-transform duration-700 ease-out group-hover:scale-95"
                                 style={{
                                     width: '100%',
