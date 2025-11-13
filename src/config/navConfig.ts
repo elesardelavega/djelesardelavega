@@ -42,7 +42,7 @@ export const SOCIAL_LINKS = [
 //media sounCloud
 export const FEATURED_MEDIA_CONFIG = {
   title: 'Música',
-  description: 'Escucha mi última sesion.',
+  description: 'Escucha la última sesion.',
   badge: {
     label: 'Fuerza Bruta - Sesión Techno Crossfitt',
     href: 'https://soundcloud.com/elesardelavega/fuerza-bruta-sesion-techno-crossfit-bajo-gallego',

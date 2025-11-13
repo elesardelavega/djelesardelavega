@@ -1,14 +1,14 @@
 import { IconMusic, IconUser, IconPhoto } from '@tabler/icons-react'
 
 import photoMe from '../assets/fotos/1n.png'
-import photoGallery from '../assets/gallery/monzalbarba12.jpg';
+import photoGallery from '../assets/gallery/monzalbarba12.jpg'
 import photoJaula from '../assets/me/jaula.jpg'
 
 export const features = [
   {
     icon: IconMusic,
     title: 'MÚSICA',
-    description: 'Explora mis últimos sets y producciones.',
+    description: 'Explora los últimos sets y producciones.',
     color: 'primary',
     href: '/musica',
     image: photoJaula,
@@ -17,7 +17,7 @@ export const features = [
   {
     icon: IconUser,
     title: 'SOBRE MÍ',
-    description: 'Descubre mi estilo, trayectoria, setup y eventos.',
+    description: 'Descubre el estilo, trayectoria, setup y eventos.',
     color: 'secondary',
     href: '/sobre-mi',
     image: photoMe,
@@ -26,7 +26,7 @@ export const features = [
   {
     icon: IconPhoto,
     title: 'GALERÍA',
-    description: 'Mira mis mejores fotos actuando.',
+    description: 'Momentos en escena.',
     color: 'primary',
     href: '/galeria',
     image: photoGallery,

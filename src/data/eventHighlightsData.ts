@@ -13,6 +13,8 @@ export interface EventDateItem {
   date: string;
   city: string;
   venue: string;
+  type?: string;
+  time?: string;
 }
 
 // Multimedia
@@ -25,8 +27,39 @@ export const eventHighlightItems: EventHighlightItem[] = [
 ];
 
 export const eventDates: EventDateItem[] = [
-  { date: '15 NOV 2025', city: 'Zaragoza', venue: 'Orera' },
-  { date: '25 DIC 2025 - NOCHEBUENA', city: 'Zaragoza', venue: 'Zaragoza' },
-  { date: '31 DIC 2025 - NOCHEVIEJA', city: 'Zaragoza', venue: 'Zaragoza' },
-  { date: '06 ENE 2026 - NOCHE DE REYES', city: 'Zaragoza', venue: 'Zaragoza' },
+  {
+    date: 'Sábado 15 NOV 2025',
+    city: 'Zaragoza',
+    venue: 'Orera',
+    type: 'Discomovil',
+    time: 'Despues de la orquesta',
+  },
+  {
+    date: 'Sábado 06 DIC 2025',
+    city: 'Zaragoza',
+    venue: 'Aniñón',
+    type: 'Tardeo',
+    time: '19:30 - 22',
+  },
+  {
+    date: 'Miércoles 24 DIC 2025',
+    city: 'Zaragoza',
+    venue: 'Zaragoza',
+    type: 'Discomovil Nochebuena',
+    time: 'Reservada',
+  },
+  {
+    date: 'Miércoles 31 DIC 2025',
+    city: 'Aniñón',
+    venue: 'Zaragoza',
+    type: 'Discomovil Nochevieja',
+    time: '01:00',
+  },
+  {
+    date: 'Martes 06 ENE 2026',
+    city: 'Zaragoza',
+    venue: 'Zaragoza',
+    type: 'Discomovil Reyes',
+    time: 'Libre',
+  },
 ];

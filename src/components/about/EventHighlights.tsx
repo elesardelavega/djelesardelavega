@@ -33,13 +33,15 @@ const EventHighlights: React.FC = () => {
                         </Title>
                         <div className="space-y-4">
                             {eventDates.map((event, i) => (
-                                <div key={i} className="border-b border-[hsl(var(--border))] pb-2">
-                                    <Text className="text-sm text-[hsl(var(--muted-foreground))] uppercase">
-                                        {event.date}
-                                    </Text>
-                                    <Text className="text-md font-semibold text-[hsl(var(--foreground))]">
-                                        {event.city} – {event.venue}
-                                    </Text>
+                                <div key={i} className="border-b border-[hsl(var(--border))] pb-4">
+                                    <div className="flex justify-between text-xs text-[hsl(var(--muted-foreground))] uppercase">
+                                        <span>{event.date}</span>
+                                        <span>{event.city} - {event.venue}</span>
+                                    </div>
+                                    <div className="flex justify-between text-md text-[hsl(var(--foreground))] font-semibold">
+                                        <span>{event.type ?? 'Evento'}</span>
+                                        <span>{event.time ?? 'Hora por confirmar'}</span>
+                                    </div>
                                 </div>
                             ))}
                         </div>
