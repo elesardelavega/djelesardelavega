@@ -47,7 +47,7 @@ export function CookiePopup() {
         <Paper
             shadow="lg"
             radius="md"
-            className="fixed bottom-4 left-4 w-[500px] p-6 
+            className="fixed bottom-4 max-w-[500px] p-6 sm:left-4 left-4 right-4
              bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-lg
              text-center z-50 opacity-0 animate-fade-in-up" 
             >
