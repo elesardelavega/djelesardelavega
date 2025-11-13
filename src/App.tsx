@@ -13,6 +13,7 @@ import { HomePage } from './pages/Home'
 import { PrivacyPolicyPage } from './pages/footer/PrivacyPolicy'
 import { TermsOfServicePage } from './pages/footer/TermsOfService'
 import { CookiePolicyPage } from './pages/footer/CookiePolicy'
+import { CookiePopup } from './components/CookieModal'
 
 function App() {
   return (
@@ -24,25 +25,28 @@ function App() {
 
           <div className="mx-auto flex-grow w-full">
             <main>
-
               <Routes>
-
                 {/* páginas */}
                 <Route path="/" element={<HomePage />} />
-
                 <Route path="/sobre-mi" element={<AboutPage />} />
                 <Route path="/musica" element={<MusicPage />} />
                 <Route path="/galeria" element={<GalleryPage />} />
                 <Route path="/contacto" element={<ContactPage />} />
 
-                {/* 💡 RUTAS LEGALES*/}
+                {/* 💡 RUTAS LEGALES */}
                 <Route path="/politica-privacidad" element={<PrivacyPolicyPage />} />
                 <Route path="/terminos-servicio" element={<TermsOfServicePage />} />
                 <Route path="/politica-cookies" element={<CookiePolicyPage />} />
 
                 {/* error 404 */}
-                <Route path="*" element={<section className="min-h-[calc(100vh-4rem)]"><h1>404 | Página no encontrada</h1></section>} />
-                
+                <Route
+                  path="*"
+                  element={
+                    <section className="min-h-[calc(100vh-4rem)]">
+                      <h1>404 | Página no encontrada</h1>
+                    </section>
+                  }
+                />
               </Routes>
             </main>
           </div>
@@ -50,9 +54,12 @@ function App() {
           <Footer />
         </div>
 
+        {/* 🔔 Modal de cookies */}
+        <CookiePopup />
       </Router>
     </ThemeProvider>
   )
 }
+
 
 export default App
