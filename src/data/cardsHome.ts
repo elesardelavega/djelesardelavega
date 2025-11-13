@@ -18,7 +18,7 @@ export const features = [
     icon: IconUser,
     title: 'SOBRE MÍ',
     description: 'Descubre el estilo, trayectoria, setup y eventos.',
-    color: 'secondary',
+    color: 'primary',
     href: '/sobre-mi',
     image: photoMe,
     imageAlt: 'Foto de retrato personal',
@@ -32,4 +32,4 @@ export const features = [
     image: photoGallery,
     imageAlt: 'Foto de evento',
   },
-]
+];

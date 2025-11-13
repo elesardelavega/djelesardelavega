@@ -114,17 +114,17 @@ export const ContactFormCard = () => {
                             </Text>
 
                             {/* Botones a la derecha */}
-                            <div className="flex flex-row justify-center sm:justify-end gap-2 w-full">
+                            <div className="flex flex-col sm:flex-row justify-center sm:justify-end gap-2 w-full">
                                 <Button
                                     type="button"
                                     onClick={() => handleWhatsApp(document.querySelector("form")!)}
                                     variant="filled"
                                     radius="md"
                                     rightSection={<IconPhone className="h-4 w-4" />}
-                                    className={`inline-flex items-center rounded-lg px-8 py-2 text-MD font-bold shadow-lg 
-                                     ${primaryColor} ${primaryForeground} ${primaryBorder}
-                                     transition duration-300 transform ease-in-out
-                                     animate-pulse-shadow hover:shadow-2xl`}
+                                    className={`inline-flex items-center justify-center rounded-lg px-8 py-2 sm:text-md font-bold shadow-lg 
+                                    ${primaryColor} ${primaryForeground} ${primaryBorder}
+                                    transition duration-300 transform ease-in-out
+                                    animate-pulse-shadow hover:shadow-2xl`}
                                 >
                                     WhatsApp
                                 </Button>
@@ -134,14 +134,15 @@ export const ContactFormCard = () => {
                                     variant="filled"
                                     radius="md"
                                     rightSection={<IconSend className="h-4 w-4" />}
-                                    className={`inline-flex items-center rounded-lg px-8 py-2 text-MD font-bold shadow-lg 
-                                     ${primaryColor} ${primaryForeground} ${primaryBorder}
-                                     transition duration-300 transform ease-in-out
-                                     animate-pulse-shadow hover:shadow-2xl`}
+                                    className={`inline-flex items-center justify-center rounded-lg px-8 py-2 sm:text-md font-bold shadow-lg 
+                                    ${primaryColor} ${primaryForeground} ${primaryBorder}
+                                    transition duration-300 transform ease-in-out
+                                    animate-pulse-shadow hover:shadow-2xl`}
                                 >
                                     Correo
                                 </Button>
                             </div>
+
 
                         </div>
 

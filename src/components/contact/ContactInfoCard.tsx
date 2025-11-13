@@ -19,7 +19,7 @@ export const ContactInfoCard = () => {
         <Card shadow="md"
             radius="md"
             withBorder
-            className={`${cardBaseClasses} min-w-[280px] lg:min-w-[320px]`}
+            className={`${cardBaseClasses} min-w-[280px] lg:min-w-[320px] min-h-[400px]`}
             p="xl">
             <Title order={3} className="text-white mb-10">
                 Información
@@ -30,7 +30,7 @@ export const ContactInfoCard = () => {
                     <IconMail size={24} className="text-[hsl(var(--muted-foreground))]" />
                     <div>
                         <Text className="text-sm font-semibold text-[hsl(var(--muted-foreground))]">Email</Text>
-                        <Text className="text-md text-base">{email}</Text>
+                        <Text className="text-md sm:text-sm">{email}</Text>
                     </div>
                 </Group>
 
@@ -38,7 +38,7 @@ export const ContactInfoCard = () => {
                     <IconPhone size={24} className="text-[hsl(var(--muted-foreground))]" />
                     <div>
                         <Text className="text-sm font-semibold text-[hsl(var(--muted-foreground))]">Teléfono</Text>
-                        <Text className="text-md text-base">{phone}</Text>
+                        <Text className="text-md sm:text-sm">{phone}</Text>
                     </div>
                 </Group>
 
@@ -46,7 +46,7 @@ export const ContactInfoCard = () => {
                     <IconMapPin size={24} className="text-[hsl(var(--muted-foreground))]" />
                     <div>
                         <Text className="text-sm font-semibold text-[hsl(var(--muted-foreground))]">Dirección</Text>
-                        <Text className="text-md text-base">{address}</Text>
+                        <Text className="text-md sm:text-sm">{address}</Text>
                     </div>
                 </Group>
             </Stack>
