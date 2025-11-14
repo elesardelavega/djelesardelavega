@@ -5,4 +5,10 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.zip'],
+  build: {
+    minify: 'terser',
+    rollupOptions: {
+      treeshake: true,
+    },
+  },
 });
