@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Title, Text, Badge } from '@mantine/core'
 import { useNavigation } from '../../hooks/useNavigation'
 
