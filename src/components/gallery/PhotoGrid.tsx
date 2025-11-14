@@ -39,7 +39,7 @@ const PhotoCardList: React.FC<RenderCardProps> = ({ photos, openLightbox }) => (
                     alt={photo.alt}
                     className="w-full h-full max-h-[300px] lg:max-h-[400px] object-cover transition duration-300 group-hover:opacity-85"
                     style={{ borderRadius: rem(6) }}
-                    loading='eager'
+                    loading='lazy'
                 />
             </Card>
         ))}
@@ -123,7 +123,7 @@ const PhotoGrid: React.FC = () => {
                         <img
                             src={selectedImage.src}
                             alt={selectedImage.alt}
-                            loading='eager'
+                            loading="lazy"
                             style={{
                                 width: '100%',
                                 height: 'auto',
