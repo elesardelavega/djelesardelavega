@@ -21,61 +21,61 @@ export interface VideoItem {
 export const videoItems: VideoItem[] = [
   {
     src: darazuVideo as string,
-    alt: 'Aniñon',
-    location: 'Zaragoza',
-    event: 'Pueblo',
+    alt: 'Darazu',
+    location: 'Zuera',
+    event: 'Discoteca',
     span: 'col-span-1',
   },
   {
     src: jaulaVideo as string,
-    alt: 'Azuara',
+    alt: 'San Mateo de Gállego',
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
   },
   {
     src: junglaZueraVideo as string,
-    alt: 'Monzalbarba',
+    alt: 'La jungla',
+    location: 'Zuera',
+    event: 'Discoteca',
+    span: 'col-span-1',
+  },
+  {
+    src: luceniVideo as string,
+    alt: 'Luceni',
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
   },
   {
-    src: luceniVideo as string,
-    alt: 'Darazu',
-    location: 'Zaragoza',
-    event: 'Discoteca',
-    span: 'col-span-1',
-  },
-  {
     src: monzalbarbaVideo as string,
-    alt: 'Bohalar',
+    alt: 'Monzalbarba',
     location: 'Zaragoza',
     event: 'Pueblo',
     span: 'col-span-1',
   },
   {
     src: retasconVideo as string,
-    alt: 'La Jungla',
-    location: 'Zaragoza',
-    event: 'Discoteca',
+    alt: 'Retascon',
+    location: 'Daroca',
+    event: 'Pueblo',
     span: 'col-span-1',
   },
   {
     src: villamayorVideo as string,
-    alt: 'Summer Party',
+    alt: 'Villamayor de Gállego',
     location: 'Zaragoza',
-    event: 'Festival',
+    event: 'Pueblo',
     span: 'col-span-1',
   },
   {
     src: zaragozaVideo as string,
-    alt: 'Monzalbarba',
+    alt: 'Zaragoza',
     location: 'Zaragoza',
-    event: 'Discoteca',
+    event: 'Ciudad',
     span: 'col-span-1',
   },
-]
+];
 
 
 export const chunkArray = (arr: VideoItem[], size: number) => {

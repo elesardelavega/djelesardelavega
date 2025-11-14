@@ -1,6 +1,6 @@
-import ILikeTheSun from '../assets/songs/ILikeTheSun.jpg'
-import WhatchaSayGirl from '../assets/songs/WhatchaSayGirl.jpg'
-import KassandraFeeling from '../assets/songs/KassandraFeeling.jpg'
+import ILikeTheSun from '../assets/songs/ILikeTheSun.webp'
+import WhatchaSayGirl from '../assets/songs/WhatchaSayGirl.webp'
+import KassandraFeeling from '../assets/songs/KassandraFeeling.webp'
 
 export const mashups = [
   {
@@ -23,10 +23,10 @@ export const mashups = [
   },
 ]
 
-import LaLuz from '../assets/songs/remix/LaLuz.jpg'
-import PonleRemix from '../assets/songs/remix/PonleRemix.jpg'
-import ProblemaRemix from '../assets/songs/remix/ProblemaRemix.jpg'
-import TodoDeTi from '../assets/songs/remix/TodoDeTi.jpg'
+import LaLuz from '../assets/songs/remix/LaLuz.webp'
+import PonleRemix from '../assets/songs/remix/PonleRemix.webp'
+import ProblemaRemix from '../assets/songs/remix/ProblemaRemix.webp'
+import TodoDeTi from '../assets/songs/remix/TodoDeTi.webp'
 
 export const remixes = [
   {
@@ -55,7 +55,7 @@ export const remixes = [
   },
 ]
 
-import sesionCrossfit from '../assets/songs/sesion/crossfit.png'
+import sesionCrossfit from '../assets/songs/sesion/crossfit.webp';
 import sesionTechno from '../assets/songs/sesion/techno.webp'
 
 export const sesiones = [

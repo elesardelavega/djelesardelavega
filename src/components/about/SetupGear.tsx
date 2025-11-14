@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { IconPhone } from '@tabler/icons-react'
 import { useNavigation } from '../../hooks/useNavigation'
 
-import setupPhoto from '../../assets/rider/rx2.png'
+import setupPhoto from '../../assets/rider/rx2.webp'
 
 export const SetupGear: React.FC = () => {
     const primaryForeground = 'text-[hsl(var(--foreground))]'

@@ -1,8 +1,8 @@
 
-import foto1 from '../assets/fotos/1.png'
-import foto2 from '../assets/fotos/1n.png'
-import foto3 from '../assets/fotos/2.png'
-import foto4 from '../assets/fotos/3.png'
+import foto1 from '../assets/fotos/1.webp'
+import foto2 from '../assets/fotos/1n.webp'
+import foto3 from '../assets/fotos/2.webp'
+import foto4 from '../assets/fotos/3.webp'
 
 import logo1 from '../assets/logoBlancoBlanco.webp'
 import logo2 from '../assets/logoBlancoAzul.webp'

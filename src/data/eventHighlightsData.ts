@@ -1,5 +1,5 @@
 // Assets
-import sanma1 from '../assets/gallery/bohalar.jpg'
+import sanma1 from '../assets/gallery/bohalar.webp';
 
 // Tipos
 export interface EventHighlightItem {
