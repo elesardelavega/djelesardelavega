@@ -5,19 +5,19 @@ import LoversDavidGuettaXAvicii from '../assets/songs/mashup/LoversDavidGuettaXA
 
 export const mashups = [
   {
-    title: 'Kassandra Feeling (Mashup)',
+    title: 'Kassandra Feeling',
     artist: 'Elesar De La Vega - Reggaeton',
     cover: KassandraFeeling,
     link: 'https://soundcloud.com/elesardelavega/kassandra-feeling-mashup-elesardelavega',
   },
   {
-    title: 'I Like It The Sun (Mashup)',
+    title: 'I Like It The Sun',
     artist: 'Elesar De La Vega - Reggaeton',
     cover: ILikeTheSun,
     link: 'https://soundcloud.com/elesardelavega/i-like-the-sun-mashup-djelesardelavega',
   },
   {
-    title: 'Whatcha Say Girl (Mashup)',
+    title: 'Whatcha Say Girl',
     artist: 'Elesar De La Vega - Reggaeton',
     cover: WhatchaSayGirl,
     link: 'https://soundcloud.com/elesardelavega/whatcha-say-girl-mashup-elesardelavega',

@@ -53,7 +53,7 @@ export const FeaturedMedia: React.FC = () => {
 
                 </div>
 
-                {/* Reproductor, TODO: editar componente de iframe a color negro y cuadrar estilos y responisve con mi paleta de colores etc... */}
+                {/* Reproductor */}
                 <div
                     className="desk:w-2/3 w-full shadow-2xl rounded-lg overflow-hidden border border-[hsl(var(--border))] opacity-0 animate-fade-in-up delay-[200ms]"
                     dangerouslySetInnerHTML={{ __html: iframeCode }}

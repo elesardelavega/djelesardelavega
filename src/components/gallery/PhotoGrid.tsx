@@ -1,61 +1,34 @@
 import React, { useState, useMemo } from 'react'
-import { Title, Card, Text, Button, Modal } from '@mantine/core'
-import { IconX, IconChevronLeft, IconChevronRight } from '@tabler/icons-react'
-import { rem } from '@mantine/core'
+import { Title } from '@mantine/core'
+import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react'
 import { Carousel } from '@mantine/carousel'
 import { useMediaQuery } from '@mantine/hooks'
 
+import PhotoCardList from './PhotoCardList'
+import ImageLightbox from './ImageLightbox'
+
 import { photoItems, chunkArray, photosPerSlide } from '../../data/galleryData'
+
+interface PhotoItem {
+    src: string
+    alt: string
+    span?: string
+    location?: string
+}
 
 const GRID_COLUMNS_MOBILE = 'grid-cols-2'
 const GRID_COLUMNS_DESKTOP = 'lg:grid-cols-4'
 
-interface RenderCardProps {
-    photos: typeof photoItems
-    openLightbox: (image: { src: string; alt: string }) => void
-}
-
-const PhotoCardList: React.FC<RenderCardProps> = ({ photos, openLightbox }) => (
-    <>
-        {photos.map((photo, index) => (
-            <Card
-                key={index}
-                shadow="md"
-                padding="xs"
-                radius="md"
-                withBorder
-                onClick={() => openLightbox(photo)}
-                className={`
-                    group w-full bg-[hsl(var(--card))] border-[hsl(var(--border))]
-                    shadow-none transition-all cursor-pointer
-                    hover:shadow-md hover:shadow-[hsl(var(--muted-foreground))]
-                    opacity-0 animate-fade-in-up h-full
-                    col-span-1
-                    ${photo.span ? photo.span : ''} 
-                `}
-            >
-                <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    className="w-full h-full max-h-[300px] lg:max-h-[400px] object-cover transition duration-300 group-hover:opacity-85"
-                    style={{ borderRadius: rem(6) }}
-                    loading='lazy'
-                />
-            </Card>
-        ))}
-    </>
-)
-
 const PhotoGrid: React.FC = () => {
     const isDesktopOrTablet = useMediaQuery('(min-width: 768px)')
 
-    // Lightbox
+    // Lightbox State
     const [opened, setOpened] = useState(false)
-    const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string; location?: string } | null>(null)
+    const [selectedImage, setSelectedImage] = useState<PhotoItem | null>(null)
 
     const chunkedPhotos = useMemo(() => chunkArray(photoItems, photosPerSlide), [photoItems])
 
-    const openLightbox = (image: { src: string; alt: string }) => {
+    const openLightbox = (image: PhotoItem) => {
         setSelectedImage(image)
         setOpened(true)
     }
@@ -71,7 +44,7 @@ const PhotoGrid: React.FC = () => {
 
                 {isDesktopOrTablet ? (
 
-                    // (CARRUSEL)
+                    // CARRUSEL para Desktop/Tablet
                     <Carousel
                         slideSize="100%"
                         slideGap="md"
@@ -95,7 +68,7 @@ const PhotoGrid: React.FC = () => {
 
                 ) : (
 
-                    // MOBILE
+                    // GRID para Mobile
                     <div className={`grid ${GRID_COLUMNS_MOBILE} gap-4 auto-rows-min pb-4`}>
                         <PhotoCardList photos={photoItems} openLightbox={openLightbox} />
                     </div>
@@ -103,54 +76,12 @@ const PhotoGrid: React.FC = () => {
                 )}
             </div>
 
-            {/*  LIGHTBOX  */}
-            <Modal
+            {/* LIGHTBOX */}
+            <ImageLightbox
                 opened={opened}
-                withCloseButton={false}
                 onClose={() => setOpened(false)}
-                size="80%"
-                centered
-                overlayProps={{
-                    backgroundOpacity: 0.75,
-                    blur: 1,
-                }}
-                classNames={{
-                    content: 'bg-[hsl(var(--background))]',
-                }}
-            >
-                {selectedImage && (
-                    <>
-                        <img
-                            src={selectedImage.src}
-                            alt={selectedImage.alt}
-                            loading="lazy"
-                            style={{
-                                width: '100%',
-                                height: 'auto',
-                                maxHeight: '80vh',
-                                objectFit: 'contain',
-                                display: 'block'
-                            }}
-                        />
-                        <Button
-                            onClick={() => setOpened(false)}
-                            variant="subtle"
-                            color="gray"
-                            style={{
-                                position: 'absolute',
-                                top: rem(10),
-                                right: rem(10),
-                                zIndex: 10
-                            }}
-                        >
-                            <IconX size="1.5rem" />
-                        </Button>
-                        <Text size="lg" ta="center" mt="sm" className="text-[hsl(var(--foreground))]">
-                            {selectedImage.alt} - {selectedImage.location}
-                        </Text>
-                    </>
-                )}
-            </Modal>
+                selectedImage={selectedImage}
+            />
         </section>
     )
 }
