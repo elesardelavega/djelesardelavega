@@ -14,6 +14,7 @@ import { PrivacyPolicyPage } from './pages/footer/PrivacyPolicy'
 import { TermsOfServicePage } from './pages/footer/TermsOfService'
 import { CookiePolicyPage } from './pages/footer/CookiePolicy'
 import { CookiePopup } from './components/CookieModal'
+import PageNotFound from './pages/PageNotFound'
 
 function App() {
   return (
@@ -39,14 +40,7 @@ function App() {
                 <Route path="/politica-cookies" element={<CookiePolicyPage />} />
 
                 {/* error 404 */}
-                <Route
-                  path="*"
-                  element={
-                    <section className="min-h-[calc(100vh-4rem)]">
-                      <h1>404 | Página no encontrada</h1>
-                    </section>
-                  }
-                />
+                <Route path="*" element={<PageNotFound />} />
               </Routes>
             </main>
           </div>
