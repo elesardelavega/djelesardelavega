@@ -217,15 +217,6 @@
       "source": "media/galeria/fotos mias estudio/1n.png"
     }
   ],
-  "downloads": {
-    "zip": "/wp-content/themes/elesar/assets/press/Elesar-De-La-Vega-press-kit.zip",
-    "rider": "/wp-content/themes/elesar/assets/press/elesar-rider-tecnico.txt",
-    "logo_white": "/wp-content/themes/elesar/assets/press/elesar-logo-blanco.png",
-    "logo_black": "/wp-content/themes/elesar/assets/press/elesar-logo-negro.png",
-    "logo_border": "/wp-content/themes/elesar/assets/press/elesar-logo-blanco-borde.png",
-    "studio_photos_zip": "/wp-content/themes/elesar/assets/press/Elesar-De-La-Vega-fotos-estudio.zip",
-    "logos_zip": "/wp-content/themes/elesar/assets/press/Elesar-De-La-Vega-logos.zip"
-  },
   "studio_all": [
     {
       "src": "/wp-content/themes/elesar/assets/press/estudio-1.png",
