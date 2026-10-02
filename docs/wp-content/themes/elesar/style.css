@@ -169,6 +169,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--elesar-accent);
 .back-to-top { position: fixed; right: clamp(18px, 3vw, 34px); bottom: clamp(18px, 3vw, 34px); z-index: 50; display: grid; place-items: center; width: 48px; height: 48px; color: var(--elesar-ink); background: var(--elesar-accent); border: 1px solid rgba(11, 14, 16, 0.45); border-radius: 999px; font-size: 1.4rem; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28); transition: transform 160ms ease, background-color 160ms ease; }
 .back-to-top:hover { color: var(--elesar-ink); background: #9be9ff; transform: translateY(-3px); }
 .back-to-top:active { transform: translateY(0); }
+.footer-legal { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 20px; color: var(--elesar-muted); font-size: 0.8rem; }
+.footer-legal a { color: inherit; }
+.footer-legal a:hover { color: var(--elesar-accent); }
+.footer-legal button { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; text-underline-offset: .2em; }
+.footer-legal button:hover { color: var(--elesar-accent); }
 
 /* Editor uses the same typography and visual hierarchy as the public page. */
 .editor-styles-wrapper .artist-hero { overflow: visible; }
@@ -237,6 +242,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--elesar-accent);
   .contact-description { font-size: 0.9rem; }
   .contact-email .wp-block-button__link { font-size: 0.875rem; padding-inline: 1.2rem; }
   .footer-socials { gap: 20px; }
+  .footer-legal { gap: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
