@@ -1,0 +1,119 @@
+[
+  {
+    "calendar_event_id": "2ad7eqtropmd2c7lfrk9r1mof0",
+    "title": "Discomóvil",
+    "start": "2026-09-03T03:00",
+    "end": "2026-09-03T06:00",
+    "city": "Uncastillo, Zaragoza",
+    "venue": "",
+    "time_text": "03:00 - 06:00"
+  },
+  {
+    "calendar_event_id": "ti88pbpu335cdol46g5v1okvv8",
+    "title": "Discomóvil",
+    "start": "2026-09-05T01:00",
+    "end": "2026-09-05T03:00",
+    "city": "Pradilla de Ebro, Zaragoza",
+    "venue": "",
+    "time_text": "01:00 - 03:00"
+  },
+  {
+    "calendar_event_id": "t35i9eunr3f4h448cr7imv85a8",
+    "title": "Discomóvil",
+    "start": "2026-09-06T03:00",
+    "end": "2026-09-06T06:00",
+    "city": "Paniza, Zaragoza",
+    "venue": "",
+    "time_text": "03:00 - 06:00"
+  },
+  {
+    "calendar_event_id": "a32b1q76rq8sfskjjubqbsn5ds",
+    "title": "Discomóvil",
+    "start": "2026-09-07T01:00",
+    "end": "2026-09-07T03:00",
+    "city": "Paniza, Zaragoza",
+    "venue": "",
+    "time_text": "01:00 - 03:00"
+  },
+  {
+    "calendar_event_id": "jh4nbqj38g9ljqra6egkrp6qdo",
+    "title": "Discomóvil",
+    "start": "2026-09-09T01:00",
+    "end": "2026-09-09T03:30",
+    "city": "Villamayor de Gállego, Zaragoza",
+    "venue": "",
+    "time_text": "01:00 - 03:30"
+  },
+  {
+    "calendar_event_id": "q76s9octqkrlqhv28gbm62k02g",
+    "title": "Tardeo",
+    "start": "2026-09-12T20:00",
+    "end": "2026-09-12T22:00",
+    "city": "San Mateo de Gállego, Zaragoza",
+    "venue": "Brutal bar",
+    "time_text": "20:00 - 22:00"
+  },
+  {
+    "calendar_event_id": "35ctoftur7qrm4rgoltbbhpdr8",
+    "title": "Tardeo",
+    "start": "2026-09-19T18:00",
+    "end": "2026-09-19T21:00",
+    "city": "San Mateo de Gállego, Zaragoza",
+    "venue": "Brutal bar",
+    "time_text": "18:00 - 21:00"
+  },
+  {
+    "calendar_event_id": "7270ud9pnrphgrkrhuumomquno",
+    "title": "Discomóvil",
+    "start": "2026-10-02T03:30",
+    "end": "2026-10-02T06:00",
+    "city": "Marlofa, Zaragoza",
+    "venue": "",
+    "time_text": "03:30 - 06:00"
+  },
+  {
+    "calendar_event_id": "4otgr15imr6ikvt3ksoojatrs0",
+    "title": "Peña la Juerga · Pilares 2026",
+    "start": "2026-10-09T22:00",
+    "end": "2026-10-10T01:00",
+    "city": "Zaragoza",
+    "venue": "Peña la Juerga",
+    "time_text": "22:00 - 01:00"
+  },
+  {
+    "calendar_event_id": "4otgr15imr6ikvt3ksoojatrs0-2026-10-10",
+    "title": "Peña la Juerga · Pilares 2026",
+    "start": "2026-10-10T22:00",
+    "end": "2026-10-11T01:00",
+    "city": "Zaragoza",
+    "venue": "Peña la Juerga",
+    "time_text": "22:00 - 01:00"
+  },
+  {
+    "calendar_event_id": "4otgr15imr6ikvt3ksoojatrs0-2026-10-11",
+    "title": "Peña la Juerga · Pilares 2026",
+    "start": "2026-10-11T22:00",
+    "end": "2026-10-12T01:00",
+    "city": "Zaragoza",
+    "venue": "Peña la Juerga",
+    "time_text": "22:00 - 01:00"
+  },
+  {
+    "calendar_event_id": "j33r8holu0oj1rmgubojtims04",
+    "title": "Peña la Juerga · Pilares 2026",
+    "start": "2026-10-16T22:00",
+    "end": "2026-10-17T01:00",
+    "city": "Zaragoza",
+    "venue": "Peña la Juerga",
+    "time_text": "22:00 - 01:00"
+  },
+  {
+    "calendar_event_id": "j33r8holu0oj1rmgubojtims04-2026-10-17",
+    "title": "Peña la Juerga · Pilares 2026",
+    "start": "2026-10-17T22:00",
+    "end": "2026-10-18T01:00",
+    "city": "Zaragoza",
+    "venue": "Peña la Juerga",
+    "time_text": "22:00 - 01:00"
+  }
+]

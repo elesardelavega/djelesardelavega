@@ -1,0 +1,7 @@
+.env
+.env.*
+!.env.example
+*.log
+backups/
+node_modules/
+assets/source/*.tmp

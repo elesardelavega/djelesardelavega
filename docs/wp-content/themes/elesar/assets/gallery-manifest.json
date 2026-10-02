@@ -1,0 +1,318 @@
+{
+  "gallery": [
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/azuara-2026-02-07-luces.webp",
+      "title": "Azuara",
+      "date": "7 Feb 2026",
+      "description": "Cabina entre luces y pista.",
+      "source": "media/galeria/fotos/Azuara 07 02 2026 - 2.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/azuara-2026-02-07-cabina.webp",
+      "title": "Azuara",
+      "date": "7 Feb 2026",
+      "description": "Plano cerrado en cabina.",
+      "source": "media/galeria/fotos/Azuara 07 02 2026 - 3.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/azuara-pista-cabina.webp",
+      "title": "Azuara",
+      "date": "2026",
+      "description": "Vista de pista desde cabina.",
+      "source": "media/galeria/fotos/azuara.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/boquineni-club.webp",
+      "title": "Boquiñeni",
+      "date": "2026",
+      "description": "Cabina violeta y sonido de noche.",
+      "source": "media/galeria/fotos/boquiñeni.jpeg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/camping-bohalar-pista.webp",
+      "title": "Camping Bohalar",
+      "date": "2026",
+      "description": "La pista vista desde arriba.",
+      "source": "media/galeria/fotos/camping bohalar.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/illueca-2026-06-17-pueblo.webp",
+      "title": "Illueca",
+      "date": "17 Jun 2026",
+      "description": "Discomóvil y público al aire libre.",
+      "source": "media/galeria/fotos/Illueca 17 06 2026 - 1.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/las-armas-zaragoza.webp",
+      "title": "Las Armas · Zaragoza",
+      "date": "2026",
+      "description": "Sesión en sala.",
+      "source": "media/galeria/fotos/Lar armas - Zaragoza.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/parros-zaragoza.webp",
+      "title": "Parros · Zaragoza",
+      "date": "2026",
+      "description": "Cabina de club.",
+      "source": "media/galeria/fotos/parros.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-juan-2026-03-05-led.webp",
+      "title": "San Juan de Mozarrifar",
+      "date": "5 Mar 2026",
+      "description": "Visuales en pantalla grande.",
+      "source": "media/galeria/fotos/San juan 05 03 2026 - 1.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-juan-2026-03-05-pista.webp",
+      "title": "San Juan de Mozarrifar",
+      "date": "5 Mar 2026",
+      "description": "Logo, luces y pista.",
+      "source": "media/galeria/fotos/San juan 05 03 2026 - 2.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-juan-2026-03-05-escenario.webp",
+      "title": "San Juan de Mozarrifar",
+      "date": "5 Mar 2026",
+      "description": "Escenario con visuales.",
+      "source": "media/galeria/fotos/San juan 05 03 2026 - 3.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-juan-2026-03-05-cabina.webp",
+      "title": "San Juan de Mozarrifar",
+      "date": "5 Mar 2026",
+      "description": "En cabina durante la sesión.",
+      "source": "media/galeria/fotos/San juan 05 03 2026 - 6.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-juan-2026-03-05-directo.webp",
+      "title": "San Juan de Mozarrifar",
+      "date": "5 Mar 2026",
+      "description": "Luces cruzadas sobre la mesa.",
+      "source": "media/galeria/fotos/San juan 05 03 2026 - 7.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-juan-2026-01-05-humo.webp",
+      "title": "San Juan de Mozarrifar",
+      "date": "5 Ene 2026",
+      "description": "Humo y contraluz en cabina.",
+      "source": "media/galeria/fotos/San juan de mozarrifar 05 01 2026 - 2.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-pista-violeta.webp",
+      "title": "San Mateo de Gállego",
+      "date": "2026",
+      "description": "Vista de pista con luz violeta.",
+      "source": "media/galeria/fotos/San Mateo de gallego (4).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-2026-04-30-duo.webp",
+      "title": "San Mateo de Gállego",
+      "date": "30 Abr 2026",
+      "description": "Cabina compartida y visuales.",
+      "source": "media/galeria/fotos/San Mateo de gallego 30 04 2026 -   (1).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-2026-04-30-logo.webp",
+      "title": "San Mateo de Gállego",
+      "date": "30 Abr 2026",
+      "description": "Logo en pantalla y escena azul.",
+      "source": "media/galeria/fotos/San Mateo de gallego 30 04 2026 -   (2).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-2026-04-30-sonrisa.webp",
+      "title": "San Mateo de Gállego",
+      "date": "30 Abr 2026",
+      "description": "Momento de cabina.",
+      "source": "media/galeria/fotos/San Mateo de gallego 30 04 2026 -   (3).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-2026-04-30-pantallas.webp",
+      "title": "San Mateo de Gállego",
+      "date": "30 Abr 2026",
+      "description": "Pista, pantallas y luces.",
+      "source": "media/galeria/fotos/San Mateo de gallego 30 04 2026 -   (5).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-2026-04-30-pista.webp",
+      "title": "San Mateo de Gállego",
+      "date": "30 Abr 2026",
+      "description": "Público frente al escenario.",
+      "source": "media/galeria/fotos/San Mateo de gallego 30 04 2026 -   (7).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-2026-04-30-humo.webp",
+      "title": "San Mateo de Gállego",
+      "date": "30 Abr 2026",
+      "description": "Humo y silueta en la mesa.",
+      "source": "media/galeria/fotos/San Mateo de gallego 30 04 2026 -   (9).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-2026-04-30-micro.webp",
+      "title": "San Mateo de Gállego",
+      "date": "30 Abr 2026",
+      "description": "Micro en mano y mezcla.",
+      "source": "media/galeria/fotos/San Mateo de gallego 30 04 2026 - (2).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-2026-04-30-fader.webp",
+      "title": "San Mateo de Gállego",
+      "date": "30 Abr 2026",
+      "description": "Detalle de mezcla.",
+      "source": "media/galeria/fotos/San Mateo de gallego 30 04 2026 - (3).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-2026-04-30-espalda.webp",
+      "title": "San Mateo de Gállego",
+      "date": "30 Abr 2026",
+      "description": "La pista desde detrás de cabina.",
+      "source": "media/galeria/fotos/San Mateo de gallego 30 04 2026 - (4).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/san-mateo-2026-04-30-perfil.webp",
+      "title": "San Mateo de Gállego",
+      "date": "30 Abr 2026",
+      "description": "Perfil de sesión.",
+      "source": "media/galeria/fotos/San Mateo de gallego 30 04 2026 - (5).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/uncastillo-2026-02-14-azul.webp",
+      "title": "Uncastillo",
+      "date": "14 Feb 2026",
+      "description": "Cabina en azul.",
+      "source": "media/galeria/fotos/Uncastillo 14 02 2026  (1).jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/villamayor-gallego-cabina.webp",
+      "title": "Villamayor de Gállego",
+      "date": "2026",
+      "description": "Cabina y pista.",
+      "source": "media/galeria/fotos/villamayor de gallego.jpg"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/gallery/villanueva-gallego-cabina.webp",
+      "title": "Villanueva de Gállego",
+      "date": "2026",
+      "description": "Mesa y luces desde cabina.",
+      "source": "media/galeria/fotos/villanueva de gallego (2).jpg"
+    }
+  ],
+  "press_display": [
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-elesar-chaqueta.webp",
+      "title": "Foto de estudio",
+      "description": "Retrato con chaqueta para carteles.",
+      "source": "media/galeria/fotos mias estudio/20.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-elesar-frontal.webp",
+      "title": "Foto de estudio",
+      "description": "Retrato frontal limpio.",
+      "source": "media/galeria/fotos mias estudio/25.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-elesar-blanco.webp",
+      "title": "Foto de estudio",
+      "description": "Retrato con sudadera blanca.",
+      "source": "media/galeria/fotos mias estudio/1n.png"
+    }
+  ],
+  "downloads": {
+    "zip": "/wp-content/themes/elesar/assets/press/Elesar-De-La-Vega-press-kit.zip",
+    "rider": "/wp-content/themes/elesar/assets/press/elesar-rider-tecnico.txt",
+    "logo_white": "/wp-content/themes/elesar/assets/press/elesar-logo-blanco.png",
+    "logo_black": "/wp-content/themes/elesar/assets/press/elesar-logo-negro.png",
+    "logo_border": "/wp-content/themes/elesar/assets/press/elesar-logo-blanco-borde.png",
+    "studio_photos_zip": "/wp-content/themes/elesar/assets/press/Elesar-De-La-Vega-fotos-estudio.zip",
+    "logos_zip": "/wp-content/themes/elesar/assets/press/Elesar-De-La-Vega-logos.zip"
+  },
+  "studio_all": [
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-1.png",
+      "name": "1.png",
+      "source": "media/galeria/fotos mias estudio/1.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-10.png",
+      "name": "10.png",
+      "source": "media/galeria/fotos mias estudio/10.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-15.png",
+      "name": "15.png",
+      "source": "media/galeria/fotos mias estudio/15.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-17.png",
+      "name": "17.png",
+      "source": "media/galeria/fotos mias estudio/17.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-1n.png",
+      "name": "1n.png",
+      "source": "media/galeria/fotos mias estudio/1n.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-2.png",
+      "name": "2.png",
+      "source": "media/galeria/fotos mias estudio/2.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-20.png",
+      "name": "20.png",
+      "source": "media/galeria/fotos mias estudio/20.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-22.png",
+      "name": "22.png",
+      "source": "media/galeria/fotos mias estudio/22.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-23.png",
+      "name": "23.png",
+      "source": "media/galeria/fotos mias estudio/23.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-25.png",
+      "name": "25.png",
+      "source": "media/galeria/fotos mias estudio/25.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-3n.png",
+      "name": "3n.png",
+      "source": "media/galeria/fotos mias estudio/3n.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-5n.png",
+      "name": "5n.png",
+      "source": "media/galeria/fotos mias estudio/5n.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/estudio-7n.png",
+      "name": "7n.png",
+      "source": "media/galeria/fotos mias estudio/7n.png"
+    }
+  ],
+  "logos_all": [
+    {
+      "src": "/wp-content/themes/elesar/assets/press/logo-logo-blanco-blanco.png",
+      "name": "logo blanco blanco.png",
+      "source": "media/galeria/logos/logo blanco blanco.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/logo-logo-negro.png",
+      "name": "logo negro.png",
+      "source": "media/galeria/logos/logo negro.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/logo-logo.png",
+      "name": "logo.png",
+      "source": "media/galeria/logos/logo.png"
+    },
+    {
+      "src": "/wp-content/themes/elesar/assets/press/logo-logoblancoborde.png",
+      "name": "logoBlancoBorde.png",
+      "source": "media/galeria/logos/logoBlancoBorde.png"
+    }
+  ]
+}
