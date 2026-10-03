@@ -8,6 +8,33 @@
     document.querySelectorAll(selector).forEach((node) => { node.textContent = value; });
   };
 
+  const initLegalNavigation = () => {
+    const header = document.querySelector(".legal-site-header");
+    const toggle = header?.querySelector(".legal-menu-toggle");
+    const nav = header?.querySelector(".legal-site-nav");
+    if (!toggle || !nav) return;
+    const close = () => {
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.querySelector(".screen-reader-text").textContent = "Abrir menú";
+      nav.classList.remove("is-open");
+    };
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!isOpen));
+      toggle.querySelector(".screen-reader-text").textContent = isOpen ? "Abrir menú" : "Cerrar menú";
+      nav.classList.toggle("is-open", !isOpen);
+    });
+    nav.addEventListener("click", (event) => {
+      if (event.target.closest("a")) close();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") close();
+    });
+    document.addEventListener("click", (event) => {
+      if (!header.contains(event.target)) close();
+    });
+  };
+
   const consent = () => {
     try {
       const value = localStorage.getItem(CONSENT_KEY);
@@ -137,6 +164,7 @@
   };
 
   const hydrate = async () => {
+    initLegalNavigation();
     try {
       const response = await fetch(CONFIG_URL, { cache: "no-store" });
       if (!response.ok) throw new Error("No se pudo cargar la configuración del sitio.");
