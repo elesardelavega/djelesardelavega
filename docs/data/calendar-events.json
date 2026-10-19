@@ -54,34 +54,7 @@
     "time_text": "22:00 - 01:00"
   },
   {
-    "calendar_event_id": "4otgr15imr6ikvt3ksoojatrs0-2026-10-10",
-    "title": "Peña la Juerga · Pilares 2026",
-    "start": "2026-10-10T22:00",
-    "end": "2026-10-11T01:00",
-    "city": "Zaragoza",
-    "venue": "Peña la Juerga",
-    "time_text": "22:00 - 01:00"
-  },
-  {
-    "calendar_event_id": "4otgr15imr6ikvt3ksoojatrs0-2026-10-11",
-    "title": "Peña la Juerga · Pilares 2026",
-    "start": "2026-10-11T22:00",
-    "end": "2026-10-12T01:00",
-    "city": "Zaragoza",
-    "venue": "Peña la Juerga",
-    "time_text": "22:00 - 01:00"
-  },
-  {
-    "calendar_event_id": "j33r8holu0oj1rmgubojtims04-2026-10-16",
-    "title": "Peña la Juerga · Pilares 2026",
-    "start": "2026-10-16T22:00",
-    "end": "2026-10-17T01:00",
-    "city": "Zaragoza",
-    "venue": "Peña la Juerga",
-    "time_text": "22:00 - 01:00"
-  },
-  {
-    "calendar_event_id": "j33r8holu0oj1rmgubojtims04-2026-10-17",
+    "calendar_event_id": "j33r8holu0oj1rmgubojtims04",
     "title": "Peña la Juerga · Pilares 2026",
     "start": "2026-10-17T22:00",
     "end": "2026-10-18T01:00",
